@@ -93,10 +93,21 @@ $baseurl:		   '/utahcubing.com';
     font-display: auto;
 }
 
-
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+@import "minima/base", "minima/layout", "minima/syntax-highlighting";
+
+.footer-col-wrapper {
+	width: calc(65%);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-col-1 {
+	width: calc(30% - (30px / 2))
+}
+
+.footer-col-2 {
+	width: calc(70% - (30px / 2))
+}
+
+

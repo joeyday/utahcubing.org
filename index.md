@@ -9,25 +9,23 @@ layout: home
 <table>
 	<thead>
 		<tr>
-			<th>Competition</th>
-			<th>Location</th>
+			<th>Date(s)</th>
+			<th>Competition name</th>
 			<th>City</th>
 			<th>Events</th>
-			<th>Date(s)</th>
 		</tr>
 	</thead>
 	<tbody id="future-competitions"></tbody>
 </table>
 
-<h2>Recent competition results</h2>
+<h2>Recent past competition results</h2>
 <table>
 	<thead>
 		<tr>
-			<th>Competition</th>
-			<th>Location</th>
+			<th>Date(s)</th>
+			<th>Competition name</th>
 			<th>City</th>
 			<th>Events</th>
-			<th>Date(s)</th>
 		</tr>
 	</thead>
 	<tbody id="past-competitions"></tbody>

@@ -14,6 +14,11 @@ fetch(base_url + path)
         competitions = competitions.items
             .filter(competition => competition.date.from > fourMonthsAgo)
             .filter(competition => competition.organisers.some(organizer => organizer.name === 'Utah Cubing Association'))
+            .map(competition => {
+            	// Strip out markdown hyperlinks
+            	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
+            	return competition
+            })
             .sort((competitionA, competitionB) => {
             	if (competitionA.date.from < competitionB.date.from) return -1
             	if (competitionA.date.from > competitionB.date.from) return 1
@@ -53,16 +58,15 @@ function populateTable(competitions, tableId) {
 	competitions.forEach(competition => {
 		let id = competition.id.trim()
 		let name = competition.name.trim()
+		let venue = competition.venue.name.trim()
 	
 		let row = tableBody.insertRow()
+		let dateCell = row.insertCell()
 		let nameCell = row.insertCell()
-		let locationCell = row.insertCell()
 		let cityCell = row.insertCell()
 		let eventCell = row.insertCell()
-		let dateCell = row.insertCell()
 		
-		nameCell.innerHTML = `<a href="https://www.worldcubeassociation.org/competitions/${id}">${name}</a>`
-		locationCell.textContent = competition.venue.name.trim()
+		nameCell.innerHTML = `<a href="https://www.worldcubeassociation.org/competitions/${id}">${name}</a>` // + `<br><small>${venue}</small>`
 		cityCell.textContent = competition.city.trim()
 		dateCell.textContent = formatDate(competition.date.from.trim())
 	})
