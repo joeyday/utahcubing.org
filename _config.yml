@@ -18,15 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Team Utah Cubing
+title: Utah Cubing
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Utah Cubing Association is a 501(c) non-profit organization dedicated to promoting speedcubing and organizing competitions in Utah and Idaho.
 baseurl: "/utahcubing.com" # the subpath of your site, e.g. /blog
 url: "https://joeyday.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+instagram_username: utahcubing
+facebook_username: utahcubing
 
 # Build settings
 # theme: minima
