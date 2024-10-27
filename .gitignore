@@ -6,3 +6,4 @@ vendor
 Gemfile.lock
 bin
 .bundle
+_posts/.DS_Store
