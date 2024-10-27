@@ -5,6 +5,7 @@
 layout: home
 ---
 
+<h2>Upcoming competitions</h2>
 <table>
 	<thead>
 		<tr>
@@ -15,7 +16,19 @@ layout: home
 			<th>Date(s)</th>
 		</tr>
 	</thead>
-	<tbody id="competitions">
-		
-	</tbody>
+	<tbody id="future-competitions"></tbody>
+</table>
+
+<h2>Recent competition results</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Competition</th>
+			<th>Location</th>
+			<th>City</th>
+			<th>Events</th>
+			<th>Date(s)</th>
+		</tr>
+	</thead>
+	<tbody id="past-competitions"></tbody>
 </table>
