@@ -113,5 +113,5 @@ function formatDate(dateString) {
     var formattedYear = date.getFullYear()
     
     // Combine the components into the desired format
-    return `${formattedMonth} ${formattedDay}, ${formattedYear}`
+    return `${formattedMonth} ${formattedDay}` // + `, ${formattedYear}`
 }
