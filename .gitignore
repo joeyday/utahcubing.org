@@ -7,3 +7,4 @@ Gemfile.lock
 bin
 .bundle
 _posts/.DS_Store
+.DS_Store
