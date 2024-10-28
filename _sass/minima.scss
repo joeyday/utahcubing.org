@@ -96,6 +96,20 @@ $baseurl:		   '/utahcubing.com';
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting";
 
+
+.mobile-name-column {
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.name-column, .city-column {
+	display: none;
+  @media (min-width: 480px) {
+    display: table-cell;
+  }
+}
+
 .footer-col-wrapper {
 	width: calc(65%);
 	margin-left: auto;
@@ -109,5 +123,4 @@ $baseurl:		   '/utahcubing.com';
 .footer-col-2 {
 	width: calc(50% - (30px / 2))
 }
-
 
