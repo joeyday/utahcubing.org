@@ -72,9 +72,9 @@ function populateTable(competitions, tableId) {
 		let venueCell = row.insertCell()
 		venueCell.className = 'venue-column'
 		
-		dateCell.innerHTML = `${date}<br><span>${city}</span>`
+		dateCell.innerHTML = `${date}<br><span class="city">${city}</span>`
 		competitionCell.innerHTML = `${link}<br>`
-		venueCell.innerHTML = `${venue}<br>${city}`
+		venueCell.innerHTML = `${venue}<br><span class="city">${city}</span>`
 
 		competition.events
 			.sort()
