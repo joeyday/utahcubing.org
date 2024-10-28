@@ -70,7 +70,7 @@ function populateTable(competitions, tableId) {
 		let competitionCell = row.insertCell()
 		competitionCell.className = 'competition-column'
 		let venueCell = row.insertCell()
-		venueCell.className = 'city-column'
+		venueCell.className = 'venue-column'
 		
 		dateCell.innerHTML = `${date}<br><span>${city}</span>`
 		competitionCell.innerHTML = `${link}<br>`
