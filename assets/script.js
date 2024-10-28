@@ -1,10 +1,11 @@
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = new Date().toJSON().slice(0, 10)
-let fourMonthsAgo = getDaysAgo(today, 90)
+let fourMonthsAgo = getDaysAgo(today, 120)
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
 let path = '/wca-rest-api/master/api/competitions/US.json'
+
 fetch(base_url + path)
     .then(response => {
         if (!response.ok) throw new Error('Network response error')
@@ -13,7 +14,7 @@ fetch(base_url + path)
     .then (competitions => {
         competitions = competitions.items
             .filter(competition => competition.date.from > fourMonthsAgo)
-            .filter(competition => competition.organisers.some(organizer => organizer.name === 'Utah Cubing Association'))
+            .filter(competition => competition.organisers.some(organiser => organiser.name === 'Utah Cubing Association'))
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
@@ -70,12 +71,23 @@ function populateTable(competitions, tableId) {
 		nameCell.className = 'name-column'
 		let cityCell = row.insertCell()
 		cityCell.className = 'city-column'
-		let eventsCell = row.insertCell()
 		
-		mobileCell.innerHTML = link + `<br><small>${city}</small>`
-		nameCell.innerHTML = link
-		cityCell.textContent = city
 		dateCell.textContent = formatDate(competition.date.from.trim())
+		mobileCell.innerHTML = link + `<br><small>${city}</small><br>`
+		nameCell.innerHTML = link + '<br>'
+		cityCell.textContent = city
+
+		competition.events
+			.sort()
+			.forEach(event => {
+				let icon = document.createElement('img')
+				let url = `./assets/svgs/event/${event}.svg`
+				icon.setAttribute('src', url)
+				icon.setAttribute('class', 'event-icon')
+				nameCell.appendChild(icon)
+				mobileIcon = icon.cloneNode(true)
+				mobileCell.appendChild(mobileIcon)
+			})
 	})
 }
 

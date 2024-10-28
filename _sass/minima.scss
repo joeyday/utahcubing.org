@@ -100,6 +100,13 @@ $baseurl:		   '/utahcubing.com';
 
 td {
 	vertical-align: top;
+	word-wrap: break-word;
+}
+
+.event-icon {
+	width: 19px;
+	height: 19px;
+	margin: 5px 3px;
 }
 
 .mobile-name-column {
@@ -117,20 +124,20 @@ td {
 }
 
 .footer-col-wrapper {
-	width: calc(100%);
-	margin-left: auto;
-	margin-right: auto;
-	
 	@media (min-width: 600px) {
+		margin-left: auto;
+		margin-right: auto;
 		width: calc(65%);
 	}
 }
 
-.footer-col-1 {
-	width: calc(50% - (30px / 2))
+.footer-col-1, .footer-col-2 {
+	@media (min-width: 600px) {
+		width: calc(50% - (30px / 2));
+	}
 }
 
-.footer-col-2 {
-	width: calc(50% - (30px / 2))
+.svg-icon {
+	width: 19px;
+	height: 19px;
 }
-

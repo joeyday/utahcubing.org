@@ -11,9 +11,8 @@ layout: home
 		<tr>
 			<th>Date(s)</th>
 			<th class="mobile-name-column">Competition</th>
-			<th class="name-column">Competition name</th>
+			<th class="name-column">Competition</th>
 			<th class="city-column">City</th>
-			<th>Events</th>
 		</tr>
 	</thead>
 	<tbody id="future-competitions"></tbody>
@@ -25,9 +24,8 @@ layout: home
 		<tr>
 			<th>Date(s)</th>
 			<th class="mobile-name-column">Competition</th>
-			<th class="name-column">Competition name</th>
+			<th class="name-column">Competition</th>
 			<th class="city-column">City</th>
-			<th>Events</th>
 		</tr>
 	</thead>
 	<tbody id="past-competitions"></tbody>
