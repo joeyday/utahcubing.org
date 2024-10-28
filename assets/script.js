@@ -83,9 +83,7 @@ function populateTable(competitions, tableId) {
 				let url = `./assets/svgs/event/${event}.svg`
 				icon.setAttribute('src', url)
 				icon.setAttribute('class', 'event-icon')
-				nameCell.appendChild(icon)
-				mobileIcon = icon.cloneNode(true)
-				mobileCell.appendChild(mobileIcon)
+				competitionCell.appendChild(icon)
 			})
 	})
 }
