@@ -57,6 +57,7 @@ function populateTable(competitions, tableId) {
 	let tableBody = document.getElementById(tableId)
 
 	competitions.forEach(competition => {
+		let date = formatDate(competition.date.from.trim())
 		let id = competition.id.trim()
 		let name = competition.name.trim()
 		let link = `<a href="https://www.worldcubeassociation.org/competitions/${id}">${name}</a>`
@@ -65,17 +66,15 @@ function populateTable(competitions, tableId) {
 	
 		let row = tableBody.insertRow()
 		let dateCell = row.insertCell()
-		let mobileCell = row.insertCell()
-		mobileCell.className = 'mobile-name-column'
-		let nameCell = row.insertCell()
-		nameCell.className = 'name-column'
-		let cityCell = row.insertCell()
-		cityCell.className = 'city-column'
+		dateCell.className = 'date-column'
+		let competitionCell = row.insertCell()
+		competitionCell.className = 'competition-column'
+		let venueCell = row.insertCell()
+		venueCell.className = 'city-column'
 		
-		dateCell.textContent = formatDate(competition.date.from.trim())
-		mobileCell.innerHTML = link + `<br><small>${city}</small><br>`
-		nameCell.innerHTML = link + '<br>'
-		cityCell.textContent = city
+		dateCell.innerHTML = `${date}<br><span>${city}</span>`
+		competitionCell.innerHTML = `${link}<br>`
+		venueCell.innerHTML = `${venue}<br>${city}`
 
 		competition.events
 			.sort()

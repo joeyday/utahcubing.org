@@ -9,10 +9,9 @@ layout: home
 <table>
 	<thead>
 		<tr>
-			<th>Date(s)</th>
-			<th class="mobile-name-column">Competition</th>
-			<th class="name-column">Competition</th>
-			<th class="city-column">City</th>
+			<th class="date-column">Date</th>
+			<th class="competition-column">Competition</th>
+			<th class="venue-column">Venue</th>
 		</tr>
 	</thead>
 	<tbody id="future-competitions"></tbody>
@@ -22,10 +21,9 @@ layout: home
 <table>
 	<thead>
 		<tr>
-			<th>Date(s)</th>
-			<th class="mobile-name-column">Competition</th>
-			<th class="name-column">Competition</th>
-			<th class="city-column">City</th>
+			<th class="date-column">Date</th>
+			<th class="competition-column">Competition</th>
+			<th class="venue-column">Venue</th>
 		</tr>
 	</thead>
 	<tbody id="past-competitions"></tbody>

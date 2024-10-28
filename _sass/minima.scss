@@ -109,14 +109,15 @@ td {
 	margin: 5px 3px;
 }
 
-.mobile-name-column {
-	display: table-cell;
+.date-column {
   @media (min-width: 600px) {
-    display: none;
+    span {
+			display: none;
+    }
   }
 }
 
-.name-column, .city-column {
+.venue-column {
 	display: none;
   @media (min-width: 600px) {
     display: table-cell;
