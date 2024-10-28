@@ -64,7 +64,7 @@ function populateTable(competitions, tableId) {
 	
 		let row = tableBody.insertRow()
 		let dateCell = row.insertCell()
-		let monileCell = row.insertCell()
+		let mobileCell = row.insertCell()
 		let nameCell = row.insertCell()
 		let cityCell = row.insertCell()
 		let eventsCell = row.insertCell()

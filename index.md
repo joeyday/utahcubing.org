@@ -24,7 +24,7 @@ layout: home
 	<thead>
 		<tr>
 			<th>Date(s)</th>
-			<th>Competition</td>
+			<th>Competition</th>
 			<th>Competition name</th>
 			<th>City</th>
 			<th>Events</th>
