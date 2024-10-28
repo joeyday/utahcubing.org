@@ -10,6 +10,7 @@ layout: home
 	<thead>
 		<tr>
 			<th>Date(s)</th>
+			<th>Competition</td>
 			<th>Competition name</th>
 			<th>City</th>
 			<th>Events</th>
@@ -23,6 +24,7 @@ layout: home
 	<thead>
 		<tr>
 			<th>Date(s)</th>
+			<th>Competition</td>
 			<th>Competition name</th>
 			<th>City</th>
 			<th>Events</th>
