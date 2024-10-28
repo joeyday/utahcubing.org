@@ -98,6 +98,7 @@ $baseurl:		   '/utahcubing.com';
 
 
 .mobile-name-column {
+	display: table-cell;
   @media (min-width: 480px) {
     display: none;
   }

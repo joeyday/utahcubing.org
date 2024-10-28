@@ -65,11 +65,11 @@ function populateTable(competitions, tableId) {
 		let row = tableBody.insertRow()
 		let dateCell = row.insertCell()
 		let mobileCell = row.insertCell()
-		mobileCell.className = 'mobile-name-cell'
+		mobileCell.className = 'mobile-name-column'
 		let nameCell = row.insertCell()
-		nameCell.className = 'name-cell'
+		nameCell.className = 'name-column'
 		let cityCell = row.insertCell()
-		cityCell.className = 'city-cell'
+		cityCell.className = 'city-column'
 		let eventsCell = row.insertCell()
 		
 		mobileCell.innerHTML = link + `<br><small>${city}</small>`
