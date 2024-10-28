@@ -109,6 +109,11 @@ td {
 	margin: 5px 3px;
 }
 
+span.city {
+	font-size: smaller;
+	font-variant: italic;
+}
+
 .date-column {
   @media (min-width: 600px) {
     span {
