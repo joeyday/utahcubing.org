@@ -1,2 +1,2 @@
-# utahcubing.com
+# utahcubing.org
 Website for Utah Cubing Association
