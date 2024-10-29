@@ -1,3 +1,11 @@
+const supplementalDataMap = window.supplementalData
+	.reduce((map, data) => {
+		map[data.id] = data
+		return map
+	}, {})
+	
+console.log(supplementalDataMap)
+
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = new Date().toJSON().slice(0, 10)
@@ -18,6 +26,7 @@ fetch(base_url + path)
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
+            	competition = {...supplementalDataMap[competition.id], ...competition}
             	return competition
             })
             .sort((competitionA, competitionB) => {
@@ -48,12 +57,12 @@ fetch(base_url + path)
         console.log(currentCompetitions)
         console.log(futureCompetitions)
         
-  		populateTable(futureCompetitions, 'future-competitions')
-  		populateTable(pastCompetitions, 'past-competitions')
+  		populateTable(futureCompetitions, 'future-competitions', true)
+  		populateTable(pastCompetitions, 'past-competitions', false)
     })
     
     
-function populateTable(competitions, tableId) {
+function populateTable(competitions, tableId, includeRegistrationMessage) {
 	let tableBody = document.getElementById(tableId)
 
 	competitions.forEach(competition => {
@@ -73,19 +82,58 @@ function populateTable(competitions, tableId) {
 		venueCell.className = 'venue-column'
 		
 		dateCell.innerHTML = `${date}<br><span class="city">${city}</span>`
-		competitionCell.innerHTML = `${link}<br>`
+		competitionCell.innerHTML = `${link}`
 		venueCell.innerHTML = `${venue}<br><span class="city">${city}</span>`
 
-		competition.events
-			.sort()
-			.forEach(event => {
-				let icon = document.createElement('img')
-				let url = `./assets/svgs/event/${event}.svg`
-				icon.setAttribute('src', url)
-				icon.setAttribute('class', 'event-icon')
-				competitionCell.appendChild(icon)
-			})
+		if (competition.events.length) {
+			let br = document.createElement('br')
+			competitionCell.appendChild(br)
+			competition.events
+				.sort(canonicalEventSort)
+				.forEach(event => {
+					let icon = document.createElement('img')
+					let url = `./assets/svgs/event/${event}.svg`
+					icon.setAttribute('src', url)
+					icon.setAttribute('class', 'event-icon')
+					competitionCell.appendChild(icon)
+				})
+		}
+			
+		if (includeRegistrationMessage) {
+			let br = document.createElement('br')
+			competitionCell.appendChild(br)
+			let registrationSpan = getRegistrationSpan(competition, today)
+			if (registrationSpan) competitionCell.appendChild(registrationSpan)
+		}
 	})
+}
+
+function getRegistrationSpan(competition, today) {
+	let registrationSpan = document.createElement('span')
+	if (!competition.registration_opens || !competition.registration_closes) return null
+	
+	const openDate = formatDate(competition.registration_opens)
+	const closeDate = formatDate(competition.registration_closes)
+
+	if (!openDate || !closeDate) return null
+	
+	if (competition.registration_opens > today) {
+		registrationSpan.textContent = `Registration opens ${openDate}`
+		registrationSpan.className = 'registration-not-open'
+	} else if (competition.registration_opens === today) {
+		registrationSpan.textContent = 'Registration opens today'
+		registrationSpan.className = 'registration-opens-today'
+	} else if (competition.registration_closes > today) {
+		registrationSpan.textContent = `Register now until ${closeDate}`
+		registrationSpan.className = 'registration-open'
+	} else if (competition.registration_closes === today) {
+		registrationSpan.textContent = 'Registration closes today'
+		registrationSpan.className = 'registration-closes-today'
+	} else {
+		registrationSpan.textContent = 'Registration closed'
+		registrationSpan.className = 'registration-closed'
+	}
+	return registrationSpan
 }
 
 function getDaysAgo(dateString, daysAgo) {
@@ -110,24 +158,56 @@ function getDaysAgo(dateString, daysAgo) {
 }
 
 function formatDate(dateString) {
-    // Split the input date string into year, month, and day components
-    var dateParts = dateString.split('-')
-    var year = parseInt(dateParts[0], 10)
-    var month = parseInt(dateParts[1], 10) - 1 // Months are 0-based in JavaScript
-    var day = parseInt(dateParts[2], 10)
-    
-    // Create a new Date object with the specified year, month, and day
-    var date = new Date(year, month, day)
-    
-    // Array of month abbreviations
-    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    
-    // Format the date components
-    var formattedMonth = monthNames[date.getMonth()]
-    var formattedDay = date.getDate()
-    var formattedYear = date.getFullYear()
-    
-    // Combine the components into the desired format
-    return `${formattedMonth} ${formattedDay}` // + `, ${formattedYear}`
+    try {
+		// Split the input date string into year, month, and day components
+		var dateParts = dateString.split('-')
+		var year = parseInt(dateParts[0], 10)
+		var month = parseInt(dateParts[1], 10) - 1 // Months are 0-based in JavaScript
+		var day = parseInt(dateParts[2], 10)
+		
+		// Create a new Date object with the specified year, month, and day
+		var date = new Date(year, month, day)
+		
+		// Array of month abbreviations
+		var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+						  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		
+		// Format the date components
+		var formattedMonth = monthNames[date.getMonth()]
+		var formattedDay = date.getDate()
+		var formattedYear = date.getFullYear()
+		
+		// Combine the components into the desired format
+		return `${formattedMonth} ${formattedDay}` // + `, ${formattedYear}`
+	} catch (e) {
+		return null
+	}
+}
+
+const canonicalEventOrderMap = [
+		'222',
+		'333',
+		'444',
+		'555',
+		'666',
+		'777',
+		'clock',
+		'minx',
+		'pyram',
+		'skewb',
+		'sq1',
+		'333oh',
+		'333bf',
+		'444bf',
+		'555bf',
+		'333mbf',
+		'333fm'
+	]
+	.reduce((acc, item, index) => {
+	  acc[item] = index;
+	  return acc;
+	}, {});
+
+function canonicalEventSort(eventA, eventB) {
+	return canonicalEventOrderMap[eventA] - canonicalEventOrderMap[eventB];
 }

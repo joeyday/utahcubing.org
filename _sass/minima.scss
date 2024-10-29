@@ -131,6 +131,22 @@ span.city {
     }
 }
 
+span.registration-not-open,
+span.registration-opens-today,
+span.registration-open,
+span.registration-closes-today,
+span.registration-closed {
+	text-size: smaller;
+	font-variant: all-small-caps;
+}
+
+
+span.registration-not-open { color: gray }
+span.registration-opens-today { color: green }
+span.registration-open { color: green }
+span.registration-closes-today { color: orange }
+span.registration-closed { color: red }
+
 .venue-column {
     display: none;
     @media (min-width: 600px) {

@@ -1,0 +1,16 @@
+- id: PBQtah72024
+  registration_opens: 2024-11-01
+  registration_closes: 2024-12-09
+
+- id: SpanishForkAM2024
+  registration_opens: 2024-10-04
+  registration_closes: 2024-11-18
+
+- id: SpanishForkPM2024
+  registration_opens: 2024-10-04
+  registration_closes: 2024-11-18
+
+- id: IdahoChampionship2024
+  registration_opens: 2024-09-30
+  registration_closes: 2024-10-26
+  live_id: 6125
