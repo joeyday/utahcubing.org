@@ -97,6 +97,55 @@ $baseurl:		   '';
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting";
 
+main.page-content {
+	padding-top: 0;
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+div#today {
+	ul {
+		text-indent: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 0.5em;
+		row-gap: 0.5em;
+		align-items: stretch;
+		
+		li {
+			display: grid;
+			align-content: center;
+			justify-items: center;
+			display: block;
+			padding: 1em 1.5em;
+			text-indent: none;
+			background: gray;
+			border-radius: 0.5em;
+			color: white;
+			text-align: center;
+			
+			a {
+				color: white;
+				
+				img {
+					display: block;
+					margin: 0 auto 0.5em;
+					width: 50px;
+					height: 50px;
+					vertical-align: -4px;
+				}
+			}
+		}
+		
+		@media (min-width: 700px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+}
 
 td {
     vertical-align: top;

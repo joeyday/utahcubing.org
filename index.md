@@ -5,6 +5,8 @@
 layout: home
 ---
 
+<div id="today"></div>
+
 <h2>Upcoming competitions</h2>
 <table>
 	<thead>

@@ -22,9 +22,7 @@ title: Utah Cubing
 description: >- # this means to ignore newlines until "baseurl:"
   <strong>Utah Cubing Association</strong> is a 501(c) non-profit organization dedicated to promoting speedcubing and organizing competitions in Utah and Idaho.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://joeyday.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-instagram_username: utahcubing
-facebook_username: utahcubing
+url: "https://utahcubing.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 # theme: minima

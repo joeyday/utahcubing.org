@@ -1,11 +1,5 @@
-const supplementalDataMap = window.supplementalData
-	.reduce((map, data) => {
-		map[data.id] = data
-		return map
-	}, {})
+const supplementalData = window.supplementalData
 	
-console.log(supplementalDataMap)
-
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = new Date().toJSON().slice(0, 10)
@@ -26,7 +20,7 @@ fetch(base_url + path)
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
-            	competition = {...supplementalDataMap[competition.id], ...competition}
+            	competition = {...supplementalData[competition.id], ...competition}
             	return competition
             })
             .sort((competitionA, competitionB) => {
@@ -57,11 +51,35 @@ fetch(base_url + path)
         console.log(currentCompetitions)
         console.log(futureCompetitions)
         
-  		populateTable(futureCompetitions, 'future-competitions', true)
-  		populateTable(pastCompetitions, 'past-competitions', false)
+        if (currentCompetitions.length) populateTodayDiv(currentCompetitions)
+  		if (futureCompetitions.length) populateTable(futureCompetitions, 'future-competitions', true)
+  		if (pastCompetitions.length) populateTable(pastCompetitions, 'past-competitions', false)
     })
     
-    
+function populateTodayDiv(competitions) {
+	let todayDiv = document.getElementById('today')
+
+	competitions.forEach(competition => {
+		let id = competition.id
+		let liveId = competition.live_id
+		let name = competition.name
+
+		let h2 = document.createElement('h2')
+		h2.textContent = `Today: ${name}`
+		todayDiv.appendChild(h2)
+
+		let list = document.createElement('ul')
+		todayDiv.appendChild(list)
+		if (liveId) {
+			list.appendChild(stringToNode(`<li class="live"><a href="https://live.worldcubeassociation.org/competitions/${liveId}"><img src="/assets/svgs/font-awesome/stopwatch-solid-white.svg"> Live Results</a></li>`))
+		}
+		list.appendChild(stringToNode(`<li class="groups"><a href="https://www.competitiongroups.com/competitions/${id}"><img src="/assets/svgs/font-awesome/clipboard-solid-white.svg"> Group & Staffing Assignments</a></li>`))
+		list.appendChild(stringToNode(`<li class="schedule"><a href="https://www.worldcubeassociation.org/competitions/${id}#competition-schedule"><img src="/assets/svgs/font-awesome/calendar-solid-white.svg"> Event Schedule</a></li>`))
+		list.appendChild(stringToNode(`<li class="info"><a href="https://www.worldcubeassociation.org/competitions/${id}"><img src="/assets/svgs/font-awesome/circle-info-solid-white.svg"> General Information</a></li>`))
+	})
+}
+
+
 function populateTable(competitions, tableId, includeRegistrationMessage) {
 	let tableBody = document.getElementById(tableId)
 
@@ -182,6 +200,12 @@ function formatDate(dateString) {
 	} catch (e) {
 		return null
 	}
+}
+
+function stringToNode(htmlString) {
+  const template = document.createElement('template')
+  template.innerHTML = htmlString.trim()
+  return template.content.firstChild
 }
 
 const canonicalEventOrderMap = [
