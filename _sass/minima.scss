@@ -118,8 +118,7 @@ div#today {
 		
 		li {
 			display: grid;
-			align-content: center;
-			justify-items: center;
+			place-content: center;
 			display: block;
 			padding: 1em 1.5em;
 			text-indent: none;
