@@ -181,13 +181,19 @@ table {
 	border: none;
 }
 
+table tr:nth-child(even) {
+	background: rgba($state-flag-yellow, 0.1);
+}
+
 table th {
 	border: none;
+	background: $state-flag-yellow;
 }
 
 table td {
     vertical-align: top;
     word-wrap: break-word;
+    border-top: 1px solid $state-flag-yellow;
     border-left: none;
     border-right: none;
     border-bottom: none;
