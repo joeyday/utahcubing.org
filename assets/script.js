@@ -2,7 +2,7 @@ const supplementalData = window.supplementalData
 	
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
-if (!today) today = new Date().toJSON().slice(0, 10)
+if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/Denver" })
 let fourMonthsAgo = getDaysAgo(today, 120)
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'

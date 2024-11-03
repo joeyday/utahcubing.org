@@ -1,20 +1,31 @@
+/* Rubik's official brand colors:
+   https://colorpeek.com/#f58923,007ac2,fee63f,40b652,ed263f */
+   
+/* Official Utah state flag colors:
+   https://colorpeek.com/#071d49,ffffff,aa0200,ffb81d */
+
 @charset "utf-8";
 
 // Define defaults for each variable.
 
-$base-font-family: source-sans-3, sans-serif;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$bold-font-weight: 700 !default;
-$black-font-weight: 900 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-font-family:	source-sans-3, sans-serif;
+$base-font-size:	16px !default;
+$base-font-weight:	400 !default;
+$bold-font-weight:	700 !default;
+$black-font-weight:	900 !default;
+$small-font-size:	$base-font-size * 0.875 !default;
+$base-line-height:	1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:		30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$text-color:		#111 !default;
+$background-color:	#fdfdfd !default;
+$brand-color:		#2a7ae2 !default;
+
+$state-flag-red:  	#aa0200 !default;
+$state-flag-yellow:	#ffb81d !default;
+$state-flag-blue:	#071d49 !default;
+$state-flag-white:	#ffffff !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -97,6 +108,26 @@ $baseurl:		   '';
 // Import partials.
 @import "minima/base", "minima/layout", "minima/syntax-highlighting";
 
+
+header.site-header {
+	border: none;
+	background: $state-flag-blue;
+	color: $state-flag-white;
+	
+	a.site-title {
+		color: $state-flag-white;
+	
+		&:visited {
+			color: $state-flag-white;
+		}
+		
+		&:hover {
+			text-decoration: none;
+			border-bottom: 1px $state-flag-white solid;
+		}
+	}
+}
+
 main.page-content {
 	padding-top: 0;
 }
@@ -122,7 +153,7 @@ div#today {
 			display: block;
 			padding: 1em 1.5em;
 			text-indent: none;
-			background: gray;
+			background: $state-flag-blue;
 			border-radius: 0.5em;
 			color: white;
 			text-align: center;
@@ -146,9 +177,20 @@ div#today {
 	}
 }
 
-td {
+table {
+	border: none;
+}
+
+table th {
+	border: none;
+}
+
+table td {
     vertical-align: top;
     word-wrap: break-word;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .event-icon {
@@ -203,6 +245,14 @@ span.registration-closed { color: red }
     }
 }
 
+footer {
+	background: $state-flag-red;
+	
+	.footer-col-wrapper {
+		color: $state-flag-white;
+	}
+}
+
 .footer-col-wrapper {
 	@media (min-width: 600px) {
 		margin-left: auto;
@@ -217,7 +267,21 @@ span.registration-closed { color: red }
 	}
 }
 
+footer a {
+	color: $state-flag-white;
+	
+	&:visited,
+	&:hover {
+		color: $state-flag-white;
+	}
+}
+
 .svg-icon {
 	width: 19px;
 	height: 19px;
+	fill: $state-flag-white;
+}
+
+nav.site-nav {
+	display: none !important;
 }
