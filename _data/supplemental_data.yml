@@ -1,3 +1,25 @@
+# Competitions dont have to be listed
+# here to show up on the site. This is
+# for adding supplemental data that's
+# not contained in the unoffical WCA
+# public API, such as registration dates
+# and WCA Live ID numbers. The site will
+# function just fine without this info,
+# but may be less useful.
+
+# Note: All formatting here, including
+# indentation, is extremely important.
+# When adding a new comp, it's best to
+# copy/paste a previous one to clone the
+# fomatting precisely.
+
+# Comps don't have to be listed below in
+# any particular order. ¯\_(ツ)_/¯
+
+UtahIceCubing2025:
+  registration_opens: 2024-11-15
+  registration_closes: 2025-01-17
+
 PBQtah72024:
   registration_opens: 2024-11-01
   registration_closes: 2024-12-09
