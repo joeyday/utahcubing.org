@@ -4,7 +4,7 @@ const blacklist = window.blacklist || []
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/Denver" })
-let fourMonthsAgo = getDaysAgo(today, 90)
+let daysAgo = getDaysAgo(today, 60)
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
 let path = '/wca-rest-api/master/api/competitions/US.json'
@@ -16,7 +16,7 @@ fetch(base_url + path)
     })
     .then (competitions => {
         competitions = competitions.items
-            .filter(competition => competition.date.from > fourMonthsAgo)
+            .filter(competition => competition.date.from > daysAgo)
             .filter(competition => competition.organisers.some(organiser => organiser.name === 'Utah Cubing Association'))
 			.filter(competition => !blacklist.includes(competition.id))
             .map(competition => {
