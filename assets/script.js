@@ -1,5 +1,5 @@
 const supplementalData = window.supplementalData
-const blacklist = window.blacklist
+const blacklist = window.blacklist || []
 	
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
