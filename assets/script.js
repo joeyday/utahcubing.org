@@ -53,14 +53,6 @@ fetch(base_url + path)
 
 		let futureCompetitions = competitions
 			.filter(competition => competition.date.from > today)
-
-
-		console.log(supplementalData)
-		console.log(blacklist)
-		console.log(whitelist)        
-        console.log(pastCompetitions)
-        console.log(currentCompetitions)
-        console.log(futureCompetitions)
         
         if (currentCompetitions.length) populateTodayDiv(currentCompetitions)
   		if (futureCompetitions.length) populateTable(futureCompetitions, 'future-competitions', true)
