@@ -1,5 +1,6 @@
 const supplementalData = window.supplementalData
 const blacklist = window.blacklist || []
+const whitelist = window.whitelist || []
 	
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
@@ -17,8 +18,12 @@ fetch(base_url + path)
     .then (competitions => {
         competitions = competitions.items
             .filter(competition => competition.date.from > daysAgo)
-            .filter(competition => competition.organisers.some(organiser => organiser.name === 'Utah Cubing Association'))
 			.filter(competition => !blacklist.includes(competition.id))
+            .filter(competition => {
+            	return whitelist.includes(competition.id) ||
+            		competition.organisers
+            			.some(organiser => organiser.name === 'Utah Cubing Association')
+            })
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
@@ -48,7 +53,11 @@ fetch(base_url + path)
 
 		let futureCompetitions = competitions
 			.filter(competition => competition.date.from > today)
-        
+
+
+		console.log(supplementalData)
+		console.log(blacklist)
+		console.log(whitelist)        
         console.log(pastCompetitions)
         console.log(currentCompetitions)
         console.log(futureCompetitions)

@@ -1,0 +1,9 @@
+# Competitions listed here will be shown on the site even if not organized
+# by Utah Cubing Association. This is mainly useful for multi-location FMC
+# competitions with a Utah location.
+
+# Note the starting list is only United States competitions, so adding one
+# from anywhere else in the world will not cause it to be displayed here.
+
+# List competition ids with a markdown unordered list. Example:
+ - NotARealCompetition2025
