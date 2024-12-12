@@ -164,6 +164,7 @@ div#today {
 				display: inline-block;
 				padding: 1em;
 				color: white;
+				text-decoration: none;
 				
 				strong {
 					font-weight: $black-font-weight;
@@ -180,6 +181,12 @@ div#today {
 					width: 50px;
 					height: 50px;
 					vertical-align: -4px;
+				}
+				
+				&:hover {
+					strong {
+						text-decoration: underline;
+					}
 				}
 			}
 		}		
