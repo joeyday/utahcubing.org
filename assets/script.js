@@ -74,11 +74,11 @@ function populateTodayDiv(competitions) {
 		let list = document.createElement('ul')
 		todayDiv.appendChild(list)
 		if (liveId) {
-			list.appendChild(stringToNode(`<li class="live"><a href="https://live.worldcubeassociation.org/competitions/${liveId}"><img src="/assets/svgs/font-awesome/stopwatch-solid-white.svg"> Live Results</a></li>`))
+			list.appendChild(stringToNode(`<li class="live"><a href="https://live.worldcubeassociation.org/competitions/${liveId}"><img src="/assets/svgs/font-awesome/trophy-solid-white.svg"><strong>Live Results</strong><br><small>Did I get a PR? Did I make it to the next round?</small></a></li>`))
 		}
-		list.appendChild(stringToNode(`<li class="groups"><a href="https://www.competitiongroups.com/competitions/${id}"><img src="/assets/svgs/font-awesome/clipboard-solid-white.svg"> Group & Staffing Assignments</a></li>`))
-		list.appendChild(stringToNode(`<li class="schedule"><a href="https://www.worldcubeassociation.org/competitions/${id}#competition-schedule"><img src="/assets/svgs/font-awesome/calendar-solid-white.svg"> Event Schedule</a></li>`))
-		list.appendChild(stringToNode(`<li class="info"><a href="https://www.worldcubeassociation.org/competitions/${id}"><img src="/assets/svgs/font-awesome/circle-info-solid-white.svg"> General Information</a></li>`))
+		list.appendChild(stringToNode(`<li class="schedule"><a href="https://www.competitiongroups.com/competitions/${id}"><img src="/assets/svgs/font-awesome/calendar-solid-white.svg"><strong>My Schedule</strong><br><small>What groups am I in? What jobs do I have?</small></a></li>`))
+		list.appendChild(stringToNode(`<li class="events"><a href="https://www.worldcubeassociation.org/competitions/${id}#competition-events"><img src="/assets/svgs/font-awesome/stopwatch-solid-white.svg"><strong>Event Info</strong><br><small>What&rsquo;s the cutoff or time limit? How many rounds?</small></a></li>`))
+		list.appendChild(stringToNode(`<li class="info"><a href="https://www.worldcubeassociation.org/competitions/${id}/registrations"><img src="/assets/svgs/font-awesome/ranking-star-solid-white.svg"><strong>Psych Sheet</strong><br><small>How do I stack against the competition?</small></a></li>`))
 	})
 }
 

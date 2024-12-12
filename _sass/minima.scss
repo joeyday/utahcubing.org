@@ -138,7 +138,7 @@ h2 {
 
 div#today {
 	ul {
-		text-indent: none;
+		text-indent: 0;
 		margin: 0;
 		padding: 0;
 		display: grid;
@@ -146,21 +146,34 @@ div#today {
 		column-gap: 0.5em;
 		row-gap: 0.5em;
 		align-items: stretch;
+		justify-items: center;
 		
 		li {
-			display: grid;
 			place-content: center;
 			display: block;
-			padding: 1em 1.5em;
+			width: 100%;
+			padding: 0;
 			text-indent: none;
 			background: $state-flag-blue;
 			border-radius: 0.5em;
 			color: white;
 			text-align: center;
+			justify-self: center;
 			
 			a {
+				display: inline-block;
+				padding: 1em;
 				color: white;
 				
+				strong {
+					font-weight: $black-font-weight;
+					text-transform: uppercase;
+				}
+				
+				small {
+					font-size: 80%;
+				}
+
 				img {
 					display: block;
 					margin: 0 auto 0.5em;
@@ -169,8 +182,7 @@ div#today {
 					vertical-align: -4px;
 				}
 			}
-		}
-		
+		}		
 		@media (min-width: 700px) {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
