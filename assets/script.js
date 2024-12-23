@@ -5,7 +5,7 @@ const whitelist = window.whitelist || []
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/Denver" })
-let daysAgo = getDaysAgo(today, 60)
+let daysAgo = getDaysAgo(today, 45)
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
 let path = '/wca-rest-api/master/api/competitions.json'
@@ -16,14 +16,16 @@ fetch(base_url + path)
         return response.json()
     })
     .then (competitions => {
+    	window.allCompetitions = new Array(competitions)
+    
         competitions = competitions.items
-            .filter(competition => competition.date.from > daysAgo)
-			.filter(competition => !blacklist.includes(competition.id))
             .filter(competition => {
             	return whitelist.includes(competition.id) ||
             		competition.organisers
             			.some(organiser => organiser.name === 'Utah Cubing Association')
             })
+            .filter(competition => competition.date.from > daysAgo)
+			.filter(competition => !blacklist.includes(competition.id))
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
@@ -37,7 +39,9 @@ fetch(base_url + path)
             	if (competitionA.name > competitionB.name) return 1
             	return 0
             })
-            
+        
+        window.competitions = competitions
+                    
         let pastCompetitions = competitions
         	.filter(competition => competition.date.till < today)
         	.sort((competitionA, competitionB) => {
