@@ -8,7 +8,7 @@ if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/
 let daysAgo = getDaysAgo(today, 60)
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
-let path = '/wca-rest-api/master/api/competitions/US.json'
+let path = '/wca-rest-api/master/api/competitions.json'
 
 fetch(base_url + path)
     .then(response => {
