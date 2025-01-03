@@ -7,6 +7,23 @@ let today = params.get("today")
 if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/Denver" })
 let daysAgo = getDaysAgo(today, 45)
 
+let query = params.get("query")
+
+// Default query function
+let queryFn = competition => {
+	return !blacklist.includes(competition.id) &&
+		(whitelist.includes(competition.id) ||
+		competition.organisers
+			.some(organiser => organiser.name === 'Utah Cubing Association'))
+}
+
+// Championship query function
+if (query == 'championships') queryFn = competition => {
+	return /championship/i.test(competition.name) &&
+		(/wca/i.test(competition.name) ||
+		/cubingusa/i.test(competition.name))
+}
+
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
 let path = '/wca-rest-api/master/api/competitions.json'
 
@@ -19,13 +36,8 @@ fetch(base_url + path)
     	window.allCompetitions = new Array(competitions)
     
         competitions = competitions.items
-            .filter(competition => {
-            	return whitelist.includes(competition.id) ||
-            		competition.organisers
-            			.some(organiser => organiser.name === 'Utah Cubing Association')
-            })
+            .filter(queryFn)
             .filter(competition => competition.date.from > daysAgo)
-			.filter(competition => !blacklist.includes(competition.id))
             .map(competition => {
             	// Strip out markdown hyperlinks
             	competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
