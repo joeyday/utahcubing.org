@@ -17,11 +17,16 @@ let queryFn = competition => {
 			.some(organiser => organiser.name === 'Utah Cubing Association'))
 }
 
-// Championship query function
+// Major championships query function
 if (query == 'championships') queryFn = competition => {
 	return /championship/i.test(competition.name) &&
 		(/wca/i.test(competition.name) ||
 		/cubingusa/i.test(competition.name))
+}
+
+// All championships query function
+if (query == 'championships_all') queryFn = competition => {
+	return /championship/i.test(competition.name)
 }
 
 let base_url = 'https://raw.githubusercontent.com/robiningelbrecht'
@@ -53,6 +58,8 @@ fetch(base_url + path)
             })
         
         window.competitions = competitions
+        
+        console.log(competitions)
                     
         let pastCompetitions = competitions
         	.filter(competition => competition.date.till < today)
