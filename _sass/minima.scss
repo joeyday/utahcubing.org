@@ -194,6 +194,11 @@ div#today {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
 	}
+	
+	p {
+		margin: 1em auto 0;
+		text-align: center;
+	}
 }
 
 table {
