@@ -103,9 +103,9 @@ function populateTodayDiv(competitions) {
 		list.appendChild(stringToNode(`<li class="events"><a href="https://www.worldcubeassociation.org/competitions/${id}#competition-events"><img src="/assets/svgs/font-awesome/stopwatch-solid-white.svg"><strong>Event Info</strong><br><small>What&rsquo;s the cutoff or time limit? How many rounds?</small></a></li>`))
 		list.appendChild(stringToNode(`<li class="info"><a href="https://www.worldcubeassociation.org/competitions/${id}/registrations"><img src="/assets/svgs/font-awesome/ranking-star-solid-white.svg"><strong>Psych Sheet</strong><br><small>How do I stack against the competition?</small></a></li>`))
 		if (competition.extra_text) {
-    		let extraDiv = document.createElement('div')
-    		extraDiv.innerHTML = competition.extra_text
-    		todayDiv.appendChild(extraDiv)
+    		let extraP = document.createElement('p')
+    		extraP.innerHTML = competition.extra_text
+    		todayDiv.appendChild(extraP)
 		}
 	})
 }
