@@ -7,6 +7,17 @@ layout: home
 
 <div id="today"></div>
 
+<table id="current-competitions-table">
+	<thead>
+		<tr>
+			<th class="date-column">Date</th>
+			<th class="competition-column">Competition</th>
+			<th class="venue-column">Venue</th>
+		</tr>
+	</thead>
+	<tbody id="current-competitions"></tbody>
+</table>
+
 <h2>Upcoming competitions</h2>
 <table>
 	<thead>

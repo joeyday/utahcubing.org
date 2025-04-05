@@ -134,6 +134,7 @@ main.page-content {
 
 h2 {
 	margin-top: 2em;
+	margin-bottom: 15px;
 }
 
 div#today {
@@ -203,6 +204,7 @@ div#today {
 
 table {
 	border: none;
+	margin-top: 15px;
 }
 
 table tr:nth-child(even) {
@@ -314,4 +316,9 @@ footer a {
 
 nav.site-nav {
 	display: none !important;
+}
+
+#current-competitions-heading,
+#current-competitions-table {
+	display: none;
 }
