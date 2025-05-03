@@ -12,12 +12,12 @@
 UtahSpeedcubingPride2025:
   registration_opens: 2025-05-01
   registration_closes: 2025-06-01
-	live_id: 7842
+  live_id: 7842
 
 PBQtah82025:
   registration_opens: 2025-04-21
   registration_closes: 2025-05-12
-	live_id: 7841
+  live_id: 7841
 
 WolverineWeekdays2Orem2025:
   registration_opens: 2025-04-17
@@ -35,7 +35,7 @@ RexburgRumble2025:
 SouthernUtahSummer2025:
   registration_opens: 2025-02-28
   registration_closes: 2025-04-25
-	live_id: 7840
+  live_id: 7840
 
 UtahPfAIV2025:
   registration_opens: 2025-02-07
