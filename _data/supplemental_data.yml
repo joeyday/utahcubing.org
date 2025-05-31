@@ -27,6 +27,7 @@ WolverineWeekdays2Orem2025:
 BurleySummer2025:
   registration_opens: 2025-03-28
   registration_closes: 2025-05-25
+  live_id: 8042
 
 RexburgRumble2025:
   registration_opens: 2025-03-13
