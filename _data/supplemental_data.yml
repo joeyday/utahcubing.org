@@ -10,17 +10,17 @@
 # Comps don't have to be listed below in any particular order. ¯\_(ツ)_/¯
 
 BacktoSchoolUtah2025:
-  registration_open: 2025-05-19
+  registration_opens: 2025-05-19
   registration_closes: 2025-08-01
   live_id: 8045
 
 TooeleOpenA2025:
-  registration_open: 2025-05-30
+  registration_opens: 2025-05-30
   registration_closes: 2025-07-11
   live_id: 8043
 
 TooeleOpenB2025:
-  registration_open: 2025-05-30
+  registration_opens: 2025-05-30
   registration_closes: 2025-07-11
   live_id: 8044
 
