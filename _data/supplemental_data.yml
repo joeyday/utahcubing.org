@@ -9,6 +9,18 @@
 
 # Comps don't have to be listed below in any particular order. ¯\_(ツ)_/¯
 
+DavisCountyShowdown2025:
+  registration_opens: 2025-07-15
+  registration_closes: 2025-08-30
+
+UtahSnowballBash2025:
+  registration_opens: 2025-08-08
+  registration_closes: 2025-12-05
+
+PBQUtahChampionship2025:
+  registration_opens: 2025-07-29
+  registration_closes: 2025-11-16
+
 WolverineWeekdays3Orem2025:
   registration_opens: 2025-06-16
   registration_closes: 2025-07-15
