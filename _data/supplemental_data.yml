@@ -9,6 +9,9 @@
 
 # Comps don't have to be listed below in any particular order. ¯\_(ツ)_/¯
 
+RockyMountainChampionship2025:
+  live_id: 9081
+
 UtahIceCubing2026:
   registration_opens: 2025-09-19
   registration_closes: 2026-01-16
