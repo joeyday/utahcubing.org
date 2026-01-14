@@ -9,6 +9,24 @@
 
 # Comps don't have to be listed below in any particular order. ¯\_(ツ)_/¯
 
+PBQtah92026:
+  registration_opens: 2025-12-29
+  registration_closes: 2026-03-06
+  live_id: 9477
+ 
+UtahAllStars2026:
+  registration_opens: 2026-01-15
+  registration_closes: 2026-03-13
+ 
+UtahNewcomers2026:
+  registration_opens: 2026-01-15
+  registration_closes: 2026-03-13
+ 
+CubingwithDinosaursLehi2026:
+  registration_opens: 2025-12-19
+  registration_closes: 2026-02-13
+  live_id: 9476
+
 WolverineWeekdays4Orem2026:
   live_id: 9474
 
@@ -18,6 +36,7 @@ RockyMountainChampionship2025:
 UtahIceCubing2026:
   registration_opens: 2025-09-19
   registration_closes: 2026-01-16
+  live_id: 9475
 
 IdahoChampionship2025:
   registration_opens: 2025-09-08
