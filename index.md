@@ -5,6 +5,8 @@
 layout: home
 ---
 
+<p>Join us February 4 at 6pm at the Maverik center for Cubing Night at the SLC Stars vs. San Diego Clippers basketball game! <a href="https://am.ticketmaster.com/slcstars/ism/U0xTMDIwNA==?promoCode=MjVTVEFSMjY=">Click here for free tickets through Ticketmaster!</a></p>
+
 <div id="today"></div>
 
 <table id="current-competitions-table">
