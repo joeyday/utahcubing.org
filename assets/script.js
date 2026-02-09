@@ -12,15 +12,15 @@ fetch('./assets/data/competitions.json')
         window.allCompetitions = new Array(data)
     
         let competitions = data.items
-            .filter(competition => competition.date.from > daysAgo)
+            .filter(competition => competition.from > daysAgo)
             .map(competition => {
                 // Strip out markdown hyperlinks
-                competition.venue.name = competition.venue.name.replace(/\[|\]|\(.*?\)/g, '')
+                competition.venue = competition.venue.replace(/\[|\]|\(.*?\)/g, '')
                 return competition
             })
             .sort((competitionA, competitionB) => {
-                if (competitionA.date.from < competitionB.date.from) return -1
-                if (competitionA.date.from > competitionB.date.from) return 1
+                if (competitionA.from < competitionB.from) return -1
+                if (competitionA.from > competitionB.from) return 1
                 if (competitionA.name < competitionB.name) return -1
                 if (competitionA.name > competitionB.name) return 1
                 return 0
@@ -31,20 +31,20 @@ fetch('./assets/data/competitions.json')
         console.log(competitions)
                     
         let pastCompetitions = competitions
-            .filter(competition => competition.date.till < today)
+            .filter(competition => competition.till < today)
             .sort((competitionA, competitionB) => {
-                if (competitionA.date.from > competitionB.date.from) return -1
-                if (competitionA.date.from < competitionB.date.from) return 1
+                if (competitionA.from > competitionB.from) return -1
+                if (competitionA.from < competitionB.from) return 1
                 if (competitionA.name < competitionB.name) return -1
                 if (competitionA.name > competitionB.name) return 1
                 return 0
             })
 
         let currentCompetitions = competitions
-            .filter(competition => (competition.date.from <= today && competition.date.till >= today))
+            .filter(competition => (competition.from <= today && competition.till >= today))
 
         let futureCompetitions = competitions
-            .filter(competition => competition.date.from > today)
+            .filter(competition => competition.from > today)
         
         if (currentCompetitions.length) {
             populateTodayDiv(currentCompetitions)
@@ -88,11 +88,11 @@ function populateTable(competitions, tableId, includeRegistrationMessage) {
     let tableBody = document.getElementById(tableId)
 
     competitions.forEach(competition => {
-        let date = formatDate(competition.date.from.trim())
+        let date = formatDate(competition.from.trim())
         let id = competition.id.trim()
         let name = competition.name.trim()
         let link = `<a href="https://www.worldcubeassociation.org/competitions/${id}">${name}</a>`
-        let venue = competition.venue.name.trim()
+        let venue = competition.venue.trim()
         let city = competition.city.trim()
     
         let row = tableBody.insertRow()
