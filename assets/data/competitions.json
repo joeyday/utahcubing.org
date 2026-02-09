@@ -12,6 +12,17 @@
             "registration_closes": "2026-08-07"
         },
         {
+            "id": "NAC2026",
+            "name": "Rubik’s WCA North American Championship 2026",
+            "from": "2026-07-02",
+            "till": "2026-07-05",
+            "venue": "Raleigh Convention Center",
+            "city": "Raleigh, North Carolina",
+            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333fm", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
+            "registration_opens": "2026-01-21",
+            "registration_closes": "2026-05-29"
+        },
+        {
             "id": "UtahPuzzlingAwarenessV2026",
             "name": "Utah Puzzling for Awareness V Favorites 2026",
             "from": "2026-04-11",
