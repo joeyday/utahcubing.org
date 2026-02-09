@@ -30,7 +30,7 @@
             "venue": "Utah Valley University",
             "city": "Orem, Utah",
             "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1"],
-            "registration_opens": "2026-02-06",
+            "registration_opens": "2026-02-02",
             "registration_closes": "2026-04-03"
         },
         {
@@ -41,8 +41,8 @@
             "venue": "Idaho State University Pond Student Union Building",
             "city": "Pocatello, Idaho",
             "events": ["333", "444", "555", "333bf", "333oh", "sq1"],
-            "registration_opens": "2026-02-06",
-            "registration_closes": "2026-04-03"
+            "registration_opens": "2026-12-26",
+            "registration_closes": "2026-03-19"
         },
         {
             "id": "UtahAllStars2026",
@@ -86,8 +86,8 @@
             "venue": "El Dorado Ballroom",
             "city": "Meridian, Idaho",
             "events": ["333", "222", "clock", "pyram", "skewb"],
-            "registration_opens": "2025-12-26",
-            "registration_closes": "2026-03-19"
+            "registration_opens": "2026-01-30",
+            "registration_closes": "2026-02-23"
         },
         {
             "id": "CubingwithDinosaursLehi2026",
