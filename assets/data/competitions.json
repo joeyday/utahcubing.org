@@ -7,7 +7,7 @@
             "till": "2026-08-23",
             "venue": "Colorado Convention Center",
             "city": "Denver, Colorado",
-            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyra", "skewb", "sq1", "444bf", "555bf", "333mbf"],
+            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
             "registration_opens": "2026-02-01",
             "registration_closes": "2026-08-07"
         },
@@ -18,33 +18,20 @@
             "till": "2026-04-11",
             "venue": "Utah Valley University",
             "city": "Orem, Utah",
-            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyra", "skewb", "sq1"],
+            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1"],
             "registration_opens": "2026-02-06",
             "registration_closes": "2026-04-03"
         },
         {
-            "id": "CubingwithDinosaursLehi2026",
-            "name": "Cubing with Dinosaurs Lehi 2026",
-            "from": "2026-02-21",
-            "till": "2026-02-21",
-            "venue": "Museum of Ancient Life",
-            "city": "Lehi, Utah",
-            "events": ["333", "666", "777", "minx", "skewb"],
-            "registration_opens": "2025-12-19",
-            "registration_closes": "2026-02-13",
-            "live_id": 9476
-        },
-        {
-            "id": "PBQtah92026",
-            "name": "PBQtah 9 2026",
-            "from": "2026-03-14",
-            "till": "2026-03-14",
-            "venue": "Sorenson Student Center",
-            "city": "Orem, Utah",
-            "events": ["333bf", "333fm", "444bf", "555bf", "333mbf"],
-            "registration_opens": "2025-12-29",
-            "registration_closes": "2026-03-06",
-            "live_id": 9477
+            "id": "PocatelloPotatoPalooza2026",
+            "name": "Pocatello Potato Palooza 2026",
+            "from": "2026-03-28",
+            "till": "2026-03-28",
+            "venue": "Idaho State University Pond Student Union Building",
+            "city": "Pocatello, Idaho",
+            "events": ["333", "444", "555", "333bf", "333oh", "sq1"],
+            "registration_opens": "2026-02-06",
+            "registration_closes": "2026-04-03"
         },
         {
             "id": "UtahAllStars2026",
@@ -67,6 +54,41 @@
             "events": ["333", "222", "pyram"],
             "registration_opens": "2026-01-15",
             "registration_closes": "2026-03-13"
+        },
+        {
+            "id": "PBQtah92026",
+            "name": "PBQtah 9 2026",
+            "from": "2026-03-14",
+            "till": "2026-03-14",
+            "venue": "Sorenson Student Center",
+            "city": "Orem, Utah",
+            "events": ["333bf", "333fm", "444bf", "555bf", "333mbf"],
+            "registration_opens": "2025-12-29",
+            "registration_closes": "2026-03-06",
+            "live_id": 9477
+        },
+        {
+            "id": "GemStateSprint2026",
+            "name": "Gem State Sprint 2026",
+            "from": "2026-02-28",
+            "till": "2026-02-28",
+            "venue": "El Dorado Ballroom",
+            "city": "Meridian, Idaho",
+            "events": ["333", "222", "clock", "pyram", "skewb"],
+            "registration_opens": "2025-12-26",
+            "registration_closes": "2026-03-19"
+        },
+        {
+            "id": "CubingwithDinosaursLehi2026",
+            "name": "Cubing with Dinosaurs Lehi 2026",
+            "from": "2026-02-21",
+            "till": "2026-02-21",
+            "venue": "Museum of Ancient Life",
+            "city": "Lehi, Utah",
+            "events": ["333", "666", "777", "minx", "skewb"],
+            "registration_opens": "2025-12-19",
+            "registration_closes": "2026-02-13",
+            "live_id": 9476
         },
         {
             "id": "UtahIceCubing2026",
