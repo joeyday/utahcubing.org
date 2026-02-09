@@ -1,6 +1,28 @@
 {
     "items": [
         {
+            "id": "RockyMountainChampionship2026",
+            "name": "Rocky Mountain Championship 2026",
+            "from": "2026-08-21",
+            "till": "2026-08-23",
+            "venue": "Colorado Convention Center",
+            "city": "Denver, Colorado",
+            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyra", "skewb", "sq1", "444bf", "555bf", "333mbf"],
+            "registration_opens": "2026-02-01",
+            "registration_closes": "2026-08-07"
+        },
+        {
+            "id": "UtahPuzzlingAwarenessV2026",
+            "name": "Utah Puzzling for Awareness V Favorites 2026",
+            "from": "2026-04-11",
+            "till": "2026-04-11",
+            "venue": "Utah Valley University",
+            "city": "Orem, Utah",
+            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyra", "skewb", "sq1"],
+            "registration_opens": "2026-02-06",
+            "registration_closes": "2026-04-03"
+        },
+        {
             "id": "CubingwithDinosaursLehi2026",
             "name": "Cubing with Dinosaurs Lehi 2026",
             "from": "2026-02-21",
