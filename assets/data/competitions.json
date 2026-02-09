@@ -1,0 +1,72 @@
+{
+    "items": [
+        {
+            "id": "CubingwithDinosaursLehi2026",
+            "name": "Cubing with Dinosaurs Lehi 2026",
+            "from": "2026-02-21",
+            "till": "2026-02-21",
+            "venue": "Museum of Ancient Life",
+            "city": "Lehi, Utah",
+            "events": ["333", "666", "777", "minx", "skewb"],
+            "registration_opens": "2025-12-19",
+            "registration_closes": "2026-02-13",
+            "live_id": 9476
+        },
+        {
+            "id": "PBQtah92026",
+            "name": "PBQtah 9 2026",
+            "from": "2026-03-14",
+            "till": "2026-03-14",
+            "venue": "Sorenson Student Center",
+            "city": "Orem, Utah",
+            "events": ["333bf", "333fm", "444bf", "555bf", "333mbf"],
+            "registration_opens": "2025-12-29",
+            "registration_closes": "2026-03-06",
+            "live_id": 9477
+        },
+        {
+            "id": "UtahAllStars2026",
+            "name": "Utah All-Stars 2026",
+            "from": "2026-03-21",
+            "till": "2026-03-21",
+            "venue": "Weber State University",
+            "city": "Ogden, Utah",
+            "events": ["333", "222", "pyram", "sq1"],
+            "registration_opens": "2026-01-15",
+            "registration_closes": "2026-03-13"
+        },
+        {
+            "id": "UtahNewcomers2026",
+            "name": "Utah Newcomers 2026",
+            "from": "2026-03-21",
+            "till": "2026-03-21",
+            "venue": "Weber State University",
+            "city": "Ogden, Utah",
+            "events": ["333", "222", "pyram"],
+            "registration_opens": "2026-01-15",
+            "registration_closes": "2026-03-13"
+        },
+        {
+            "id": "UtahIceCubing2026",
+            "name": "Utah Ice Cubing 2026",
+            "from": "2026-01-24",
+            "till": "2026-01-24",
+            "venue": "Utah Valley Convention Center",
+            "city": "Provo, Utah",
+            "events": ["333", "222", "444", "555", "333oh"],
+            "registration_opens": "2025-09-19",
+            "registration_closes": "2026-01-16",
+            "live_id": 9475
+        },
+        {
+            "id": "WolverineWeekdays4Orem2026",
+            "name": "Wolverine Weekdays 4 Orem 2026",
+            "from": "2026-01-14",
+            "till": "2026-01-14",
+            "venue": "Sorenson Student Center",
+            "city": "Orem, Utah",
+            "events": ["444", "555", "666", "777"],
+            "live_id": 9474
+        }
+    ]
+}

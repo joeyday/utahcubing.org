@@ -30,13 +30,6 @@ layout: default
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
-
 </div>
 
-<script type="text/javascript">
-  window.supplementalData = {{ site.data.supplemental_data | jsonify }};
-  window.blacklist = {{ site.data.blacklist | jsonify }};
-  window.whitelist = {{ site.data.whitelist | jsonify }};
-</script>
-
-<script src="assets/script.js?v=32" type="text/javascript"></script>
+<script src="assets/script.js?v=33" type="text/javascript"></script>
