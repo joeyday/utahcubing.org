@@ -31,7 +31,8 @@
             "city": "Orem, Utah",
             "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1"],
             "registration_opens": "2026-02-02",
-            "registration_closes": "2026-04-03"
+            "registration_closes": "2026-04-03",
+            "live_id": 10167
         },
         {
             "id": "PocatelloPotatoPalooza2026",
@@ -53,7 +54,8 @@
             "city": "Ogden, Utah",
             "events": ["333", "222", "pyram", "sq1"],
             "registration_opens": "2026-01-15",
-            "registration_closes": "2026-03-13"
+            "registration_closes": "2026-03-13",
+            "live_id": 10165
         },
         {
             "id": "UtahNewcomers2026",
@@ -64,7 +66,8 @@
             "city": "Ogden, Utah",
             "events": ["333", "222", "pyram"],
             "registration_opens": "2026-01-15",
-            "registration_closes": "2026-03-13"
+            "registration_closes": "2026-03-13",
+            "live_id": 10166
         },
         {
             "id": "PBQtah92026",

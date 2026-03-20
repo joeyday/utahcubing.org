@@ -1,3 +1,19 @@
+
+
+
+
+
+
+
+# THIS FILE IS NO LONGER WHERE YOU ADD COMPETITION DATA
+# Add it under /assets/data/competitions.json instead
+
+
+
+
+
+
+
 # Competitions dont have to be listed here to show up on the site. This is
 # for adding supplemental data that's not contained in the unoffical WCA
 # public API, such as registration dates and WCA Live ID numbers. The site will
