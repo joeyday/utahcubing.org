@@ -9,6 +9,11 @@
 
 # Comps don't have to be listed below in any particular order. ¯\_(ツ)_/¯
 
+UtahPuzzlingAwarenessV2026:
+  registration_opens: 2026-02-02
+  registration_closes: 2026-04-03
+  live_id: 10167
+
 PBQtah92026:
   registration_opens: 2025-12-29
   registration_closes: 2026-03-06
@@ -17,10 +22,12 @@ PBQtah92026:
 UtahAllStars2026:
   registration_opens: 2026-01-15
   registration_closes: 2026-03-13
+  live_id: 10165
  
 UtahNewcomers2026:
   registration_opens: 2026-01-15
   registration_closes: 2026-03-13
+  live_id: 10166
  
 CubingwithDinosaursLehi2026:
   registration_opens: 2025-12-19
