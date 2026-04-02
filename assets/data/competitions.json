@@ -1,5 +1,28 @@
 {
     "items": [
+        // {
+        //     "id": "",
+        //     "name": "",
+        //     "from": "",
+        //     "till": "",
+        //     "venue": "",
+        //     "city": "",
+        //     "events": ["333", "222", "444", "555", "666", "777", "333bf", "333fm", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
+        //     "registration_opens": "",
+        //     "registration_closes": ""
+        // },
+        {
+            "id": "UtahCubingClassic2026",
+            "name": "Utah Cubing Classic 2026",
+            "from": "2026-05-23",
+            "till": "2026-05-23",
+            "venue": "University of Utah Union Ballroom",
+            "city": "Salt Lake City, Utah",
+            "events": ["333", "333oh", "clock", "skewb"],
+            "registration_opens": "2026-04-03",
+            "registration_closes": "2026-05-15",
+            "live_id": "10276"
+        },
         {
             "id": "RockyMountainChampionship2026",
             "name": "Rocky Mountain Championship 2026",
@@ -9,7 +32,8 @@
             "city": "Denver, Colorado",
             "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
             "registration_opens": "2026-02-01",
-            "registration_closes": "2026-08-07"
+            "registration_closes": "2026-08-07",
+            "live_id": "10277"
         },
         {
             "id": "NAC2026",
