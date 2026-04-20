@@ -1,6 +1,17 @@
 {
     "items": [
         {
+            "id": "DavisCountyShowdown2026",
+            "name": "Davis County Showdown 2026",
+            "from": "2026-06-13",
+            "till": "2026-06-13",
+            "venue": "Davis Conference Center",
+            "city": "Layton, Utah",
+            "events": ["333", "222", "444", "skewb", "sq1"],
+            "registration_opens": "2026-04-19",
+            "registration_closes": "2026-06-04"
+        },
+        {
             "id": "UtahCubingClassic2026",
             "name": "Utah Cubing Classic 2026",
             "from": "2026-05-23",
