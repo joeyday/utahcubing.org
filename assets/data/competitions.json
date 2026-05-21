@@ -1,6 +1,28 @@
 {
     "items": [
         {
+            "id": "UtahSpeedcubingSpeedoff2026",
+            "name": "Utah Speedcubing Speedoff 2026",
+            "from": "2026-09-12",
+            "till": "2026-09-12",
+            "venue": "Thanksgiving Point",
+            "city": "Lehi, Utah",
+            "events": ["333", "222", "minx", "pyram"],
+            "registration_opens": "2026-05-22",
+            "registration_closes": "2026-09-04"
+        },
+        {
+            "id": "WildWestWyoming2026",
+            "name": "Wild West Wyoming 2026",
+            "from": "2026-07-25",
+            "till": "2026-07-25",
+            "venue": "The Roundhouse",
+            "city": "Evanston, Wyoming",
+            "events": ["333", "222", "444", "555", "666", "777", "333oh"],
+            "registration_opens": "2026-05-07",
+            "registration_closes": "2026-07-17"
+        },
+        {
             "id": "DavisCountyShowdown2026",
             "name": "Davis County Showdown 2026",
             "from": "2026-06-13",
