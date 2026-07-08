@@ -1,6 +1,28 @@
 {
     "items": [
         {
+            "id": "PBQtah102026",
+            "name": "PBQtah 10 2026",
+            "from": "2026-08-15",
+            "till": "2026-08-15",
+            "venue": "MX Office",
+            "city": "Lehi, Utah",
+            "events": ["333bf", "444bf", "555bf", "333mbf"],
+            "registration_opens": "2026-07-13",
+            "registration_closes": "2026-08-09"
+        },
+        {
+            "id": "RMCFMC2026",
+            "name": "Rocky Mountain FMC Championship 2026",
+            "from": "2026-08-15",
+            "till": "2026-08-15",
+            "venue": "Multiple locations",
+            "city": "Multiple cities",
+            "events": ["333fm"],
+            "registration_opens": "2026-07-12",
+            "registration_closes": "2026-08-08"
+        },
+        {
             "id": "UtahSpeedcubingSpeedoff2026",
             "name": "Utah Speedcubing Speedoff 2026",
             "from": "2026-09-12",
