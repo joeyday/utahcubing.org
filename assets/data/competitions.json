@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-01T01:22:31.149Z",
+    "generated_at": "2026-09-01T05:28:06.997Z",
     "items": [
         {
             "id": "NAC2026",
@@ -112,7 +112,7 @@
             ],
             "registration_opens": "2026-05-23T01:00:00.000Z",
             "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 82
+            "spots_left": 80
         },
         {
             "id": "IdahoSpookySpeedsolving2026",
