@@ -1,5 +1,26 @@
 {
+    "generated_at": "2026-08-31T23:42:04.889Z",
     "items": [
+        {
+            "id": "WildWestWyoming2026",
+            "name": "Wild West Wyoming 2026",
+            "from": "2026-07-25",
+            "till": "2026-07-25",
+            "venue": "The Roundhouse",
+            "city": "Evanston, Wyoming",
+            "events": [
+                "222",
+                "333",
+                "333oh",
+                "444",
+                "555",
+                "666",
+                "777"
+            ],
+            "registration_opens": "2026-05-07",
+            "registration_closes": "2026-07-17",
+            "spots_left": 60
+        },
         {
             "id": "PBQtah102026",
             "name": "PBQtah 10 2026",
@@ -7,20 +28,15 @@
             "till": "2026-08-15",
             "venue": "MX Office",
             "city": "Lehi, Utah",
-            "events": ["333bf", "444bf", "555bf", "333mbf"],
+            "events": [
+                "333bf",
+                "333mbf",
+                "444bf",
+                "555bf"
+            ],
             "registration_opens": "2026-07-13",
-            "registration_closes": "2026-08-09"
-        },
-        {
-            "id": "RMCFMC2026",
-            "name": "Rocky Mountain FMC Championship 2026",
-            "from": "2026-08-15",
-            "till": "2026-08-15",
-            "venue": "Multiple locations",
-            "city": "Multiple cities",
-            "events": ["333fm"],
-            "registration_opens": "2026-07-12",
-            "registration_closes": "2026-08-08"
+            "registration_closes": "2026-08-09",
+            "spots_left": 17
         },
         {
             "id": "UtahSpeedcubingSpeedoff2026",
@@ -29,170 +45,53 @@
             "till": "2026-09-12",
             "venue": "Thanksgiving Point",
             "city": "Lehi, Utah",
-            "events": ["333", "222", "minx", "pyram"],
+            "events": [
+                "222",
+                "333",
+                "minx",
+                "pyram"
+            ],
             "registration_opens": "2026-05-22",
-            "registration_closes": "2026-09-04"
+            "registration_closes": "2026-09-04",
+            "spots_left": 82
         },
         {
-            "id": "WildWestWyoming2026",
-            "name": "Wild West Wyoming 2026",
-            "from": "2026-07-25",
-            "till": "2026-07-25",
-            "venue": "The Roundhouse",
-            "city": "Evanston, Wyoming",
-            "events": ["333", "222", "444", "555", "666", "777", "333oh"],
-            "registration_opens": "2026-05-07",
-            "registration_closes": "2026-07-17"
+            "id": "IdahoSpookySpeedsolving2026",
+            "name": "Idaho Spooky Speedsolving 2026",
+            "from": "2026-10-03",
+            "till": "2026-10-03",
+            "venue": "Bonneville Fairgrounds",
+            "city": "Idaho Falls, Idaho",
+            "events": [
+                "222",
+                "333",
+                "666",
+                "777",
+                "pyram",
+                "sq1"
+            ],
+            "registration_opens": "2026-08-27",
+            "registration_closes": "2026-09-24",
+            "spots_left": 92
         },
         {
-            "id": "DavisCountyShowdown2026",
-            "name": "Davis County Showdown 2026",
-            "from": "2026-06-13",
-            "till": "2026-06-13",
-            "venue": "Davis Conference Center",
-            "city": "Layton, Utah",
-            "events": ["333", "222", "444", "skewb", "sq1"],
-            "registration_opens": "2026-04-19",
-            "registration_closes": "2026-06-04"
-        },
-        {
-            "id": "UtahCubingClassic2026",
-            "name": "Utah Cubing Classic 2026",
-            "from": "2026-05-23",
-            "till": "2026-05-23",
-            "venue": "University of Utah Union Ballroom",
-            "city": "Salt Lake City, Utah",
-            "events": ["333", "333oh", "clock", "skewb"],
-            "registration_opens": "2026-04-03",
-            "registration_closes": "2026-05-15",
-            "live_id": "10276"
-        },
-        {
-            "id": "RockyMountainChampionship2026",
-            "name": "Rocky Mountain Championship 2026",
-            "from": "2026-08-21",
-            "till": "2026-08-23",
-            "venue": "Colorado Convention Center",
-            "city": "Denver, Colorado",
-            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
-            "registration_opens": "2026-02-01",
-            "registration_closes": "2026-08-07",
-            "live_id": "10277"
-        },
-        {
-            "id": "NAC2026",
-            "name": "Rubik’s WCA North American Championship 2026",
-            "from": "2026-07-02",
-            "till": "2026-07-05",
-            "venue": "Raleigh Convention Center",
-            "city": "Raleigh, North Carolina",
-            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333fm", "333oh", "clock", "minx", "pyram", "skewb", "sq1", "444bf", "555bf", "333mbf"],
-            "registration_opens": "2026-01-21",
-            "registration_closes": "2026-05-29"
-        },
-        {
-            "id": "UtahPuzzlingAwarenessV2026",
-            "name": "Utah Puzzling for Awareness V Favorites 2026",
-            "from": "2026-04-11",
-            "till": "2026-04-11",
-            "venue": "Utah Valley University",
-            "city": "Orem, Utah",
-            "events": ["333", "222", "444", "555", "666", "777", "333bf", "333oh", "clock", "minx", "pyram", "skewb", "sq1"],
-            "registration_opens": "2026-02-02",
-            "registration_closes": "2026-04-03",
-            "live_id": 10167
-        },
-        {
-            "id": "PocatelloPotatoPalooza2026",
-            "name": "Pocatello Potato Palooza 2026",
-            "from": "2026-03-28",
-            "till": "2026-03-28",
+            "id": "IdahoSpudcubingIII2026",
+            "name": "Idaho Spudcubing III 2026",
+            "from": "2026-12-12",
+            "till": "2026-12-12",
             "venue": "Idaho State University Pond Student Union Building",
             "city": "Pocatello, Idaho",
-            "events": ["333", "444", "555", "333bf", "333oh", "sq1"],
-            "registration_opens": "2025-12-26",
-            "registration_closes": "2026-03-19"
-        },
-        {
-            "id": "UtahAllStars2026",
-            "name": "Utah All-Stars 2026",
-            "from": "2026-03-21",
-            "till": "2026-03-21",
-            "venue": "Weber State University",
-            "city": "Ogden, Utah",
-            "events": ["333", "222", "pyram", "sq1"],
-            "registration_opens": "2026-01-15",
-            "registration_closes": "2026-03-13",
-            "live_id": 10165
-        },
-        {
-            "id": "UtahNewcomers2026",
-            "name": "Utah Newcomers 2026",
-            "from": "2026-03-21",
-            "till": "2026-03-21",
-            "venue": "Weber State University",
-            "city": "Ogden, Utah",
-            "events": ["333", "222", "pyram"],
-            "registration_opens": "2026-01-15",
-            "registration_closes": "2026-03-13",
-            "live_id": 10166
-        },
-        {
-            "id": "PBQtah92026",
-            "name": "PBQtah 9 2026",
-            "from": "2026-03-14",
-            "till": "2026-03-14",
-            "venue": "Sorenson Student Center",
-            "city": "Orem, Utah",
-            "events": ["333bf", "333fm", "444bf", "555bf", "333mbf"],
-            "registration_opens": "2025-12-29",
-            "registration_closes": "2026-03-06",
-            "live_id": 9477
-        },
-        {
-            "id": "GemStateSprint2026",
-            "name": "Gem State Sprint 2026",
-            "from": "2026-02-28",
-            "till": "2026-02-28",
-            "venue": "El Dorado Ballroom",
-            "city": "Meridian, Idaho",
-            "events": ["333", "222", "clock", "pyram", "skewb"],
-            "registration_opens": "2026-01-30",
-            "registration_closes": "2026-02-23"
-        },
-        {
-            "id": "CubingwithDinosaursLehi2026",
-            "name": "Cubing with Dinosaurs Lehi 2026",
-            "from": "2026-02-21",
-            "till": "2026-02-21",
-            "venue": "Museum of Ancient Life",
-            "city": "Lehi, Utah",
-            "events": ["333", "666", "777", "minx", "skewb"],
-            "registration_opens": "2025-12-19",
-            "registration_closes": "2026-02-13",
-            "live_id": 9476
-        },
-        {
-            "id": "UtahIceCubing2026",
-            "name": "Utah Ice Cubing 2026",
-            "from": "2026-01-24",
-            "till": "2026-01-24",
-            "venue": "Utah Valley Convention Center",
-            "city": "Provo, Utah",
-            "events": ["333", "222", "444", "555", "333oh"],
-            "registration_opens": "2025-09-19",
-            "registration_closes": "2026-01-16",
-            "live_id": 9475
-        },
-        {
-            "id": "WolverineWeekdays4Orem2026",
-            "name": "Wolverine Weekdays 4 Orem 2026",
-            "from": "2026-01-14",
-            "till": "2026-01-14",
-            "venue": "Sorenson Student Center",
-            "city": "Orem, Utah",
-            "events": ["444", "555", "666", "777"],
-            "live_id": 9474
+            "events": [
+                "333",
+                "333bf",
+                "333oh",
+                "clock",
+                "minx",
+                "skewb"
+            ],
+            "registration_opens": "2026-09-03",
+            "registration_closes": "2026-12-03",
+            "spots_left": 84
         }
     ]
 }
