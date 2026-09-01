@@ -144,10 +144,16 @@ function getRegistrationSpan(competition, today) {
         registrationSpan.textContent = `Registration opens ${openDate}`
         registrationSpan.className = 'registration-not-open'
     } else if (competition.registration_opens === today) {
-        registrationSpan.textContent = `Registration opens today${getSpotsLeftText(competition)}`
+        const spotsLabel = getSpotsLeftLabel(competition)
+        registrationSpan.textContent = spotsLabel
+            ? `Registration opens today · ${spotsLabel}`
+            : 'Registration opens today'
         registrationSpan.className = 'registration-opens-today'
     } else if (competition.registration_closes > today) {
-        registrationSpan.textContent = `Register now until ${closeDate}${getSpotsLeftText(competition)}`
+        const spotsLabel = getSpotsLeftLabel(competition)
+        registrationSpan.textContent = spotsLabel
+            ? `${spotsLabel} · Registration closes ${closeDate}`
+            : `Register now until ${closeDate}`
         registrationSpan.className = 'registration-open'
     } else if (competition.registration_closes === today) {
         registrationSpan.textContent = 'Registration closes today'
@@ -159,10 +165,10 @@ function getRegistrationSpan(competition, today) {
     return registrationSpan
 }
 
-function getSpotsLeftText(competition) {
-    if (typeof competition.spots_left !== 'number') return ''
-    if (competition.spots_left <= 0) return ' · Waitlist only'
-    return ` · ${competition.spots_left} spot${competition.spots_left === 1 ? '' : 's'} left`
+function getSpotsLeftLabel(competition) {
+    if (typeof competition.spots_left !== 'number') return null
+    if (competition.spots_left <= 0) return 'Waitlist only'
+    return `${competition.spots_left} spot${competition.spots_left === 1 ? '' : 's'} left`
 }
 
 function getDaysAgo(dateString, daysAgo) {
