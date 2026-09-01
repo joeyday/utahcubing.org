@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: node scripts/update-competitions.mjs
+      - run: node build/update-competitions.mjs
 
       - name: Commit and push if changed
         run: |

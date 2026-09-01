@@ -7,7 +7,7 @@
 // Stage 2: for each of those, hit the official WCA API to get registration
 // dates and a live "spots left" count.
 //
-// Run via: node scripts/update-competitions.mjs
+// Run via: node build/update-competitions.mjs
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -23,7 +23,7 @@ const TIMEZONE = 'America/Denver'
 const PAST_CUTOFF_DAYS = 60
 
 function readIdList(filename) {
-    const contents = readFileSync(path.join(root, '_data', filename), 'utf8')
+    const contents = readFileSync(path.join(root, 'build', filename), 'utf8')
     return contents
         .split('\n')
         .map(line => line.trim())
