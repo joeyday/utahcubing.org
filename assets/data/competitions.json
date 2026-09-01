@@ -1,6 +1,36 @@
 {
-    "generated_at": "2026-08-31T23:42:04.889Z",
+    "generated_at": "2026-09-01T00:06:25.558Z",
     "items": [
+        {
+            "id": "NAC2026",
+            "name": "Rubik's WCA North American Championship 2026",
+            "from": "2026-07-02",
+            "till": "2026-07-05",
+            "venue": "Raleigh Convention Center",
+            "city": "Raleigh, North Carolina",
+            "events": [
+                "222",
+                "333",
+                "333bf",
+                "333fm",
+                "333mbf",
+                "333oh",
+                "444",
+                "444bf",
+                "555",
+                "555bf",
+                "666",
+                "777",
+                "clock",
+                "minx",
+                "pyram",
+                "skewb",
+                "sq1"
+            ],
+            "registration_opens": "2026-01-21",
+            "registration_closes": "2026-05-29",
+            "spots_left": 234
+        },
         {
             "id": "WildWestWyoming2026",
             "name": "Wild West Wyoming 2026",
@@ -37,6 +67,35 @@
             "registration_opens": "2026-07-13",
             "registration_closes": "2026-08-09",
             "spots_left": 17
+        },
+        {
+            "id": "RockyMountainChampionship2026",
+            "name": "Rocky Mountain Championship 2026",
+            "from": "2026-08-21",
+            "till": "2026-08-23",
+            "venue": "Colorado Convention Center",
+            "city": "Denver, Colorado",
+            "events": [
+                "222",
+                "333",
+                "333bf",
+                "333mbf",
+                "333oh",
+                "444",
+                "444bf",
+                "555",
+                "555bf",
+                "666",
+                "777",
+                "clock",
+                "minx",
+                "pyram",
+                "skewb",
+                "sq1"
+            ],
+            "registration_opens": "2026-02-01",
+            "registration_closes": "2026-08-07",
+            "spots_left": 33
         },
         {
             "id": "UtahSpeedcubingSpeedoff2026",
