@@ -5,23 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Page not found | Utah Cubing</title>
+  <title>Utah Cubing</title>
+  <meta name="description" content="Utah Cubing Association is a 501(c) non-profit organization dedicated to promoting speedcubing and organizing competitions in Utah and Idaho.">
+  <link rel="canonical" href="https://utahcubing.org/">
+  <meta property="og:title" content="Utah Cubing">
+  <meta property="og:description" content="Utah Cubing Association is a 501(c) non-profit organization dedicated to promoting speedcubing and organizing competitions in Utah and Idaho.">
+  <meta property="og:url" content="https://utahcubing.org/">
+  <meta property="og:site_name" content="Utah Cubing">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Utah Cubing">
+
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://use.typekit.net/qhl0csm.css">
-
-  <style type="text/css" media="screen">
-    .container {
-      margin: 10px auto;
-      max-width: 600px;
-      text-align: center;
-    }
-    h1 {
-      margin: 30px 0;
-      font-size: 4em;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-  </style>
 </head>
 <body>
 
@@ -33,11 +29,43 @@
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-      <div class="container">
-        <h1>404</h1>
+      <div class="home">
+        <div id="today"></div>
 
-        <p><strong>Page not found :(</strong></p>
-        <p>The requested page could not be found.</p>
+        <table id="current-competitions-table">
+          <thead>
+            <tr>
+              <th class="date-column">Date</th>
+              <th class="competition-column">Competition</th>
+              <th class="venue-column">Venue</th>
+            </tr>
+          </thead>
+          <tbody id="current-competitions"></tbody>
+        </table>
+
+        <h2>Upcoming competitions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="date-column">Date</th>
+              <th class="competition-column">Competition</th>
+              <th class="venue-column">Venue</th>
+            </tr>
+          </thead>
+          <tbody id="future-competitions"></tbody>
+        </table>
+
+        <h2>Recent past competition results</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="date-column">Date</th>
+              <th class="competition-column">Competition</th>
+              <th class="venue-column">Venue</th>
+            </tr>
+          </thead>
+          <tbody id="past-competitions"></tbody>
+        </table>
       </div>
     </div>
   </main>
@@ -83,5 +111,6 @@
     </div>
   </footer>
 
+  <script src="/assets/script.js?v=36" type="text/javascript"></script>
 </body>
 </html>
