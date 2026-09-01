@@ -50,8 +50,8 @@ async function fetchRegistrationInfo(id) {
     const info = {}
 
     const competition = await fetchJson(`${OFFICIAL_API_BASE}/competitions/${id}`)
-    if (competition.registration_open) info.registration_opens = toDenverDate(new Date(competition.registration_open))
-    if (competition.registration_close) info.registration_closes = toDenverDate(new Date(competition.registration_close))
+    if (competition.registration_open) info.registration_opens = competition.registration_open
+    if (competition.registration_close) info.registration_closes = competition.registration_close
 
     if (competition.competitor_limit) {
         const wcif = await fetchJson(`${OFFICIAL_API_BASE}/competitions/${id}/wcif/public`)

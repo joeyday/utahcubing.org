@@ -1,6 +1,10 @@
+function toDenverDate(date) {
+    return date.toLocaleDateString('en-CA', { timeZone: "America/Denver" })
+}
+
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
-if (!today) today = new Date().toLocaleDateString('en-CA', { timeZone: "America/Denver" })
+if (!today) today = toDenverDate(new Date())
 let daysAgo = getDaysAgo(today, 45)
 
 fetch('./assets/data/competitions.json')
@@ -125,39 +129,36 @@ function populateTable(competitions, tableId, includeRegistrationMessage) {
         if (includeRegistrationMessage) {
             let br = document.createElement('br')
             competitionCell.appendChild(br)
-            let registrationSpan = getRegistrationSpan(competition, today)
+            let registrationSpan = getRegistrationSpan(competition)
             if (registrationSpan) competitionCell.appendChild(registrationSpan)
         }
     })
 }
 
-function getRegistrationSpan(competition, today) {
+function getRegistrationSpan(competition) {
     let registrationSpan = document.createElement('span')
     if (!competition.registration_opens || !competition.registration_closes) return null
-    
-    const openDate = formatDate(competition.registration_opens)
-    const closeDate = formatDate(competition.registration_closes)
 
-    if (!openDate || !closeDate) return null
-    
-    if (competition.registration_opens > today) {
-        registrationSpan.textContent = `Registration opens ${openDate}`
-        registrationSpan.className = 'registration-not-open'
-    } else if (competition.registration_opens === today) {
+    const opensAt = new Date(competition.registration_opens)
+    const closesAt = new Date(competition.registration_closes)
+    if (isNaN(opensAt) || isNaN(closesAt)) return null
+
+    const now = new Date()
+    const opensToday = toDenverDate(opensAt) === today
+    const closesToday = toDenverDate(closesAt) === today
+    const openDate = formatDate(toDenverDate(opensAt))
+    const closeDate = formatDate(toDenverDate(closesAt))
+
+    if (now < opensAt) {
+        registrationSpan.textContent = opensToday ? 'Registration opens today' : `Registration opens ${openDate}`
+        registrationSpan.className = opensToday ? 'registration-opens-today' : 'registration-not-open'
+    } else if (now < closesAt) {
         const spotsLabel = getSpotsLeftLabel(competition)
+        const closeLabel = closesToday ? 'today' : closeDate
         registrationSpan.textContent = spotsLabel
-            ? `Registration opens today · ${spotsLabel}`
-            : 'Registration opens today'
-        registrationSpan.className = 'registration-opens-today'
-    } else if (competition.registration_closes > today) {
-        const spotsLabel = getSpotsLeftLabel(competition)
-        registrationSpan.textContent = spotsLabel
-            ? `${spotsLabel} · Registration closes ${closeDate}`
-            : `Register now until ${closeDate}`
-        registrationSpan.className = 'registration-open'
-    } else if (competition.registration_closes === today) {
-        registrationSpan.textContent = 'Registration closes today'
-        registrationSpan.className = 'registration-closes-today'
+            ? `${spotsLabel} · Registration closes ${closeLabel}`
+            : `Register now until ${closeLabel}`
+        registrationSpan.className = closesToday ? 'registration-closes-today' : 'registration-open'
     } else {
         registrationSpan.textContent = 'Registration closed'
         registrationSpan.className = 'registration-closed'

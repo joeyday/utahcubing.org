@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-01T00:06:25.558Z",
+    "generated_at": "2026-09-01T01:22:31.149Z",
     "items": [
         {
             "id": "NAC2026",
@@ -27,8 +27,8 @@
                 "skewb",
                 "sq1"
             ],
-            "registration_opens": "2026-01-21",
-            "registration_closes": "2026-05-29",
+            "registration_opens": "2026-01-22T02:00:00.000Z",
+            "registration_closes": "2026-05-30T03:59:00.000Z",
             "spots_left": 234
         },
         {
@@ -47,8 +47,8 @@
                 "666",
                 "777"
             ],
-            "registration_opens": "2026-05-07",
-            "registration_closes": "2026-07-17",
+            "registration_opens": "2026-05-08T01:00:00.000Z",
+            "registration_closes": "2026-07-18T01:00:00.000Z",
             "spots_left": 60
         },
         {
@@ -64,8 +64,8 @@
                 "444bf",
                 "555bf"
             ],
-            "registration_opens": "2026-07-13",
-            "registration_closes": "2026-08-09",
+            "registration_opens": "2026-07-14T01:00:00.000Z",
+            "registration_closes": "2026-08-10T01:00:00.000Z",
             "spots_left": 17
         },
         {
@@ -93,8 +93,8 @@
                 "skewb",
                 "sq1"
             ],
-            "registration_opens": "2026-02-01",
-            "registration_closes": "2026-08-07",
+            "registration_opens": "2026-02-02T00:00:00.000Z",
+            "registration_closes": "2026-08-08T00:00:00.000Z",
             "spots_left": 33
         },
         {
@@ -110,8 +110,8 @@
                 "minx",
                 "pyram"
             ],
-            "registration_opens": "2026-05-22",
-            "registration_closes": "2026-09-04",
+            "registration_opens": "2026-05-23T01:00:00.000Z",
+            "registration_closes": "2026-09-05T01:00:00.000Z",
             "spots_left": 82
         },
         {
@@ -129,8 +129,8 @@
                 "pyram",
                 "sq1"
             ],
-            "registration_opens": "2026-08-27",
-            "registration_closes": "2026-09-24",
+            "registration_opens": "2026-08-28T00:00:00.000Z",
+            "registration_closes": "2026-09-25T00:00:00.000Z",
             "spots_left": 92
         },
         {
@@ -148,8 +148,8 @@
                 "minx",
                 "skewb"
             ],
-            "registration_opens": "2026-09-03",
-            "registration_closes": "2026-12-03",
+            "registration_opens": "2026-09-04T00:00:00.000Z",
+            "registration_closes": "2026-12-04T00:00:00.000Z",
             "spots_left": 84
         }
     ]
