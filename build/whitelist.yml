@@ -5,11 +5,12 @@
 # Note the starting list is only United States competitions, so adding one
 # from anywhere else in the world will not cause it to be displayed here.
 
+# Rocky Mountain Championship, US Nationals, North American Championship,
+# and World Championship don't need to be listed here - update-competitions.mjs
+# always includes them by name/region, regardless of organiser.
+
 # List competition ids with a markdown unordered list. Example:
  - NotARealCompetition2025
- 
+
  - PBQtah82025
  - FMCLIVENorthAmerica2025
- - RockyMountainChampionship2025
- - RockyMountainChampionship2026
- - NAC2026

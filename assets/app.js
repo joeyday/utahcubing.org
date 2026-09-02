@@ -2,12 +2,27 @@ function toDenverDate(date) {
     return date.toLocaleDateString('en-CA', { timeZone: "America/Denver" })
 }
 
+function applyChampionshipsHeadings() {
+    document.title = 'Championships · Utah Cubing'
+    document.querySelectorAll('h2[data-upcoming-heading]').forEach(h2 => h2.textContent = 'Upcoming championships')
+    document.querySelectorAll('h2[data-past-heading]').forEach(h2 => h2.textContent = 'Recent past championships')
+    let toggleLink = document.getElementById('data-toggle-link')
+    if (toggleLink) {
+        toggleLink.textContent = 'See Utah Cubing competitions'
+        toggleLink.href = '/'
+    }
+}
+
 let params = new URLSearchParams(document.location.search)
 let today = params.get("today")
 if (!today) today = toDenverDate(new Date())
 let daysAgo = getDaysAgo(today, 45)
 
-fetch('./assets/data/competitions.json')
+let query = params.get("query")
+let dataFile = query === 'championships' ? 'championships' : 'default'
+if (dataFile === 'championships') applyChampionshipsHeadings()
+
+fetch(`./assets/data/${dataFile}.json`)
     .then(response => {
         if (!response.ok) throw new Error('Network response error')
         return response.json()
