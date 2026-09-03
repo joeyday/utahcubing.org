@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-03T00:57:58.985Z",
+    "generated_at": "2026-09-03T05:36:13.533Z",
     "items": [
         {
             "id": "NAC2026",
@@ -112,7 +112,7 @@
             ],
             "registration_opens": "2026-05-23T01:00:00.000Z",
             "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 74
+            "spots_left": 72
         },
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -131,7 +131,7 @@
             ],
             "registration_opens": "2026-08-28T00:00:00.000Z",
             "registration_closes": "2026-09-25T00:00:00.000Z",
-            "spots_left": 92
+            "spots_left": 91
         },
         {
             "id": "IdahoSpudcubingIII2026",
