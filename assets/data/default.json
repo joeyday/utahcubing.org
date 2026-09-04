@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-03T23:24:59.472Z",
+    "generated_at": "2026-09-04T01:10:09.574Z",
     "items": [
         {
             "id": "NAC2026",
@@ -150,7 +150,7 @@
             ],
             "registration_opens": "2026-09-04T00:00:00.000Z",
             "registration_closes": "2026-12-04T00:00:00.000Z",
-            "spots_left": 84
+            "spots_left": 83
         }
     ]
 }
