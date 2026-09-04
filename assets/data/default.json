@@ -1,36 +1,6 @@
 {
-    "generated_at": "2026-09-04T01:10:09.574Z",
+    "generated_at": "2026-09-04T06:17:08.634Z",
     "items": [
-        {
-            "id": "NAC2026",
-            "name": "Rubik's WCA North American Championship 2026",
-            "from": "2026-07-02",
-            "till": "2026-07-05",
-            "venue": "Raleigh Convention Center",
-            "city": "Raleigh, North Carolina",
-            "events": [
-                "222",
-                "333",
-                "333bf",
-                "333fm",
-                "333mbf",
-                "333oh",
-                "444",
-                "444bf",
-                "555",
-                "555bf",
-                "666",
-                "777",
-                "clock",
-                "minx",
-                "pyram",
-                "skewb",
-                "sq1"
-            ],
-            "registration_opens": "2026-01-22T02:00:00.000Z",
-            "registration_closes": "2026-05-30T03:59:00.000Z",
-            "spots_left": 234
-        },
         {
             "id": "WildWestWyoming2026",
             "name": "Wild West Wyoming 2026",
@@ -112,7 +82,7 @@
             ],
             "registration_opens": "2026-05-23T01:00:00.000Z",
             "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 71
+            "spots_left": 66
         },
         {
             "id": "IdahoSpookySpeedsolving2026",
