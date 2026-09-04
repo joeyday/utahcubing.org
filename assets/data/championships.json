@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-04T06:17:10.357Z",
+    "generated_at": "2026-09-04T11:34:30.904Z",
     "items": [
         {
             "id": "Euro2026",
@@ -61,7 +61,7 @@
             ],
             "registration_opens": "2026-03-02T00:00:00.000Z",
             "registration_closes": "2026-08-26T00:00:00.000Z",
-            "spots_left": 27
+            "spots_left": 26
         },
         {
             "id": "WCAAfricanChampionship2026",
