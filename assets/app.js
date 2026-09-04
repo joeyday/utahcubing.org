@@ -6,11 +6,6 @@ function applyChampionshipsHeadings() {
     document.title = 'Championships · Utah Cubing'
     document.querySelectorAll('h2[data-upcoming-heading]').forEach(h2 => h2.textContent = 'Upcoming championships')
     document.querySelectorAll('h2[data-past-heading]').forEach(h2 => h2.textContent = 'Recent past championships')
-    let toggleLink = document.getElementById('data-toggle-link')
-    if (toggleLink) {
-        toggleLink.textContent = 'See Utah Cubing competitions'
-        toggleLink.href = '/'
-    }
 }
 
 let params = new URLSearchParams(document.location.search)
