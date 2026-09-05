@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-04T23:10:03.278Z",
+    "generated_at": "2026-09-05T01:15:01.013Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -82,7 +82,7 @@
             ],
             "registration_opens": "2026-05-23T01:00:00.000Z",
             "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 61
+            "spots_left": 59
         },
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -120,7 +120,7 @@
             ],
             "registration_opens": "2026-09-04T00:00:00.000Z",
             "registration_closes": "2026-12-04T00:00:00.000Z",
-            "spots_left": 83
+            "spots_left": 81
         }
     ]
 }
