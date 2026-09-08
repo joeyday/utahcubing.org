@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-07T23:17:17.689Z",
+    "generated_at": "2026-09-08T01:17:42.489Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -101,7 +101,7 @@
             ],
             "registration_opens": "2026-08-28T00:00:00.000Z",
             "registration_closes": "2026-09-25T00:00:00.000Z",
-            "spots_left": 89
+            "spots_left": 88
         },
         {
             "id": "IdahoSpudcubingIII2026",
@@ -120,7 +120,7 @@
             ],
             "registration_opens": "2026-09-04T00:00:00.000Z",
             "registration_closes": "2026-12-04T00:00:00.000Z",
-            "spots_left": 79
+            "spots_left": 78
         }
     ]
 }
