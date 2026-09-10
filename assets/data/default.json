@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-10T18:06:53.040Z",
+    "generated_at": "2026-09-10T21:04:01.962Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -16,10 +16,7 @@
                 "555",
                 "666",
                 "777"
-            ],
-            "registration_opens": "2026-05-08T01:00:00.000Z",
-            "registration_closes": "2026-07-18T01:00:00.000Z",
-            "spots_left": 60
+            ]
         },
         {
             "id": "PBQtah102026",
@@ -33,10 +30,7 @@
                 "333mbf",
                 "444bf",
                 "555bf"
-            ],
-            "registration_opens": "2026-07-14T01:00:00.000Z",
-            "registration_closes": "2026-08-10T01:00:00.000Z",
-            "spots_left": 17
+            ]
         },
         {
             "id": "RockyMountainChampionship2026",
@@ -62,10 +56,7 @@
                 "pyram",
                 "skewb",
                 "sq1"
-            ],
-            "registration_opens": "2026-02-02T00:00:00.000Z",
-            "registration_closes": "2026-08-08T00:00:00.000Z",
-            "spots_left": 33
+            ]
         },
         {
             "id": "UtahSpeedcubingSpeedoff2026",
@@ -79,10 +70,7 @@
                 "333",
                 "minx",
                 "pyram"
-            ],
-            "registration_opens": "2026-05-23T01:00:00.000Z",
-            "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 59
+            ]
         },
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -98,10 +86,7 @@
                 "777",
                 "pyram",
                 "sq1"
-            ],
-            "registration_opens": "2026-08-28T00:00:00.000Z",
-            "registration_closes": "2026-09-25T00:00:00.000Z",
-            "spots_left": 87
+            ]
         },
         {
             "id": "IdahoSpudcubingIII2026",
@@ -117,10 +102,7 @@
                 "clock",
                 "minx",
                 "skewb"
-            ],
-            "registration_opens": "2026-09-04T00:00:00.000Z",
-            "registration_closes": "2026-12-04T00:00:00.000Z",
-            "spots_left": 78
+            ]
         }
     ]
 }
