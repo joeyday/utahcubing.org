@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-10T21:04:02.277Z",
+    "generated_at": "2026-09-10T23:19:38.702Z",
     "items": [
         {
             "id": "Euro2026",
@@ -26,7 +26,10 @@
                 "pyram",
                 "skewb",
                 "sq1"
-            ]
+            ],
+            "registration_opens": "2026-01-15T18:00:00.000Z",
+            "registration_closes": "2026-05-14T21:59:00.000Z",
+            "spots_left": 1
         },
         {
             "id": "NewEnglandQuietChamps2026",
@@ -41,7 +44,10 @@
                 "333mbf",
                 "444bf",
                 "555bf"
-            ]
+            ],
+            "registration_opens": "2026-03-27T19:00:00.000Z",
+            "registration_closes": "2026-07-09T00:00:00.000Z",
+            "spots_left": 0
         },
         {
             "id": "WCAAfricanFMCChampionship2026",
@@ -52,7 +58,10 @@
             "city": "Multiple Cities",
             "events": [
                 "333fm"
-            ]
+            ],
+            "registration_opens": "2026-03-02T00:00:00.000Z",
+            "registration_closes": "2026-08-26T00:00:00.000Z",
+            "spots_left": 26
         },
         {
             "id": "WCAAfricanChampionship2026",
@@ -78,7 +87,10 @@
                 "pyram",
                 "skewb",
                 "sq1"
-            ]
+            ],
+            "registration_opens": "2026-01-23T06:00:00.000Z",
+            "registration_closes": "2026-09-18T17:00:00.000Z",
+            "spots_left": 133
         },
         {
             "id": "NewEnglandChampionship2026",
@@ -100,7 +112,10 @@
                 "pyram",
                 "skewb",
                 "sq1"
-            ]
+            ],
+            "registration_opens": "2026-05-28T23:00:00.000Z",
+            "registration_closes": "2026-10-10T03:59:00.000Z",
+            "spots_left": 144
         },
         {
             "id": "OC2026",
@@ -126,7 +141,10 @@
                 "pyram",
                 "skewb",
                 "sq1"
-            ]
+            ],
+            "registration_opens": "2026-06-10T05:00:00.000Z",
+            "registration_closes": "2026-11-29T10:59:00.000Z",
+            "spots_left": 61
         }
     ]
 }
