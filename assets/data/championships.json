@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-11T11:40:48.025Z",
+    "generated_at": "2026-09-11T15:55:05.009Z",
     "items": [
         {
             "id": "Euro2026",
@@ -115,7 +115,7 @@
             ],
             "registration_opens": "2026-05-28T23:00:00.000Z",
             "registration_closes": "2026-10-10T03:59:00.000Z",
-            "spots_left": 144
+            "spots_left": 145
         },
         {
             "id": "OC2026",
