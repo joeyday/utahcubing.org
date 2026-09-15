@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-15T12:00:08.942Z",
+    "generated_at": "2026-09-15T16:50:07.397Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -102,6 +102,62 @@
             "registration_opens": "2026-08-28T00:00:00.000Z",
             "registration_closes": "2026-09-25T00:00:00.000Z",
             "spots_left": 86
+        },
+        {
+            "id": "UtahQuietChampionship2026",
+            "name": "Utah Quiet Championship 2026",
+            "from": "2026-10-17",
+            "till": "2026-10-17",
+            "venue": "Utah Valley University",
+            "city": "Orem, Utah",
+            "events": [
+                "333bf",
+                "333fm",
+                "333mbf",
+                "444bf",
+                "555bf"
+            ],
+            "registration_opens": "2026-09-19T01:00:00.000Z",
+            "registration_closes": "2026-10-14T01:00:00.000Z",
+            "spots_left": 24
+        },
+        {
+            "id": "UtahMarathonChampionship2026",
+            "name": "Utah Marathon Championship 2026",
+            "from": "2026-11-14",
+            "till": "2026-11-14",
+            "venue": "Utah Valley University",
+            "city": "Orem, Utah",
+            "events": [
+                "444",
+                "555",
+                "666",
+                "777",
+                "minx",
+                "sq1"
+            ],
+            "registration_opens": "2026-09-19T01:00:00.000Z",
+            "registration_closes": "2026-11-07T02:00:00.000Z",
+            "spots_left": 70
+        },
+        {
+            "id": "UtahSprintChampionship2026",
+            "name": "Utah Sprint Championship 2026",
+            "from": "2026-11-20",
+            "till": "2026-11-21",
+            "venue": "Utah Cultural Celebration Center",
+            "city": "West Valley City, Utah",
+            "events": [
+                "222",
+                "333",
+                "333oh",
+                "clock",
+                "pyram",
+                "skewb"
+            ],
+            "registration_opens": "2026-09-19T01:00:00.000Z",
+            "registration_closes": "2026-11-14T02:00:00.000Z",
+            "spots_left": 175
         },
         {
             "id": "IdahoSpudcubingIII2026",
