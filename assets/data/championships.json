@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-16T01:32:20.648Z",
+    "generated_at": "2026-09-16T07:17:14.859Z",
     "items": [
         {
             "id": "Euro2026",
@@ -90,7 +90,7 @@
             ],
             "registration_opens": "2026-01-23T06:00:00.000Z",
             "registration_closes": "2026-09-18T17:00:00.000Z",
-            "spots_left": 138
+            "spots_left": 136
         },
         {
             "id": "NewEnglandChampionship2026",
@@ -115,7 +115,7 @@
             ],
             "registration_opens": "2026-05-28T23:00:00.000Z",
             "registration_closes": "2026-10-10T03:59:00.000Z",
-            "spots_left": 138
+            "spots_left": 137
         },
         {
             "id": "OC2026",
