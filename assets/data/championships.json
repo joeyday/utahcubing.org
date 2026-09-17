@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-17T01:36:28.372Z",
+    "generated_at": "2026-09-17T07:12:03.248Z",
     "items": [
         {
             "id": "Euro2026",
@@ -30,24 +30,6 @@
             "registration_opens": "2026-01-15T18:00:00.000Z",
             "registration_closes": "2026-05-14T21:59:00.000Z",
             "spots_left": 1
-        },
-        {
-            "id": "NewEnglandQuietChamps2026",
-            "name": "CubingUSA New England Quiet Championship 2026",
-            "from": "2026-07-18",
-            "till": "2026-07-18",
-            "venue": "Wells Ogunquit Senior Center",
-            "city": "Wells, Maine",
-            "events": [
-                "333bf",
-                "333fm",
-                "333mbf",
-                "444bf",
-                "555bf"
-            ],
-            "registration_opens": "2026-03-27T19:00:00.000Z",
-            "registration_closes": "2026-07-09T00:00:00.000Z",
-            "spots_left": 0
         },
         {
             "id": "WCAAfricanFMCChampionship2026",
