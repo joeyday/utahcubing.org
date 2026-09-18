@@ -1,36 +1,6 @@
 {
-    "generated_at": "2026-09-18T01:23:00.905Z",
+    "generated_at": "2026-09-18T06:19:42.310Z",
     "items": [
-        {
-            "id": "Euro2026",
-            "name": "Rubik's WCA European Championship 2026",
-            "from": "2026-07-16",
-            "till": "2026-07-19",
-            "venue": "Sportcentrum Valkenhuizen",
-            "city": "Arnhem",
-            "events": [
-                "222",
-                "333",
-                "333bf",
-                "333fm",
-                "333mbf",
-                "333oh",
-                "444",
-                "444bf",
-                "555",
-                "555bf",
-                "666",
-                "777",
-                "clock",
-                "minx",
-                "pyram",
-                "skewb",
-                "sq1"
-            ],
-            "registration_opens": "2026-01-15T18:00:00.000Z",
-            "registration_closes": "2026-05-14T21:59:00.000Z",
-            "spots_left": 1
-        },
         {
             "id": "WCAAfricanFMCChampionship2026",
             "name": "WCA African FMC Championship 2026",
@@ -72,7 +42,7 @@
             ],
             "registration_opens": "2026-01-23T06:00:00.000Z",
             "registration_closes": "2026-09-18T17:00:00.000Z",
-            "spots_left": 135
+            "spots_left": 133
         },
         {
             "id": "NewEnglandChampionship2026",
