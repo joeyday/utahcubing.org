@@ -237,10 +237,10 @@ function formatDateRange(fromString, tillString) {
         var [tillYear, tillMonth, tillDay] = tillString.split('-').map(part => parseInt(part, 10))
 
         if (fromYear === tillYear && fromMonth === tillMonth) {
-            return `${monthAbbreviations[fromMonth - 1]} ${fromDay}-${tillDay}`
+            return `${monthAbbreviations[fromMonth - 1]} ${fromDay}–${tillDay}`
         }
 
-        return `${formatDate(fromString)} - ${formatDate(tillString)}`
+        return `${formatDate(fromString)} – ${formatDate(tillString)}`
     } catch (e) {
         return null
     }
