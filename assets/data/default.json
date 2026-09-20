@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-20T00:40:31.908Z",
+    "generated_at": "2026-09-20T02:48:56.840Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -9,13 +9,13 @@
             "venue": "The Roundhouse",
             "city": "Evanston, Wyoming",
             "events": [
-                "222",
                 "333",
-                "333oh",
+                "222",
                 "444",
                 "555",
                 "666",
-                "777"
+                "777",
+                "333oh"
             ],
             "registration_opens": "2026-05-08T01:00:00.000Z",
             "registration_closes": "2026-07-18T01:00:00.000Z",
@@ -30,9 +30,9 @@
             "city": "Lehi, Utah",
             "events": [
                 "333bf",
-                "333mbf",
                 "444bf",
-                "555bf"
+                "555bf",
+                "333mbf"
             ],
             "registration_opens": "2026-07-14T01:00:00.000Z",
             "registration_closes": "2026-08-10T01:00:00.000Z",
@@ -46,22 +46,22 @@
             "venue": "Colorado Convention Center",
             "city": "Denver, Colorado",
             "events": [
-                "222",
                 "333",
-                "333bf",
-                "333mbf",
-                "333oh",
+                "222",
                 "444",
-                "444bf",
                 "555",
-                "555bf",
                 "666",
                 "777",
+                "333bf",
+                "333oh",
                 "clock",
                 "minx",
                 "pyram",
                 "skewb",
-                "sq1"
+                "sq1",
+                "444bf",
+                "555bf",
+                "333mbf"
             ],
             "registration_opens": "2026-02-02T00:00:00.000Z",
             "registration_closes": "2026-08-08T00:00:00.000Z",
@@ -75,8 +75,8 @@
             "venue": "Thanksgiving Point",
             "city": "Lehi, Utah",
             "events": [
-                "222",
                 "333",
+                "222",
                 "minx",
                 "pyram"
             ],
@@ -92,8 +92,8 @@
             "venue": "Bonneville Fairgrounds",
             "city": "Idaho Falls, Idaho",
             "events": [
-                "222",
                 "333",
+                "222",
                 "666",
                 "777",
                 "pyram",
@@ -113,13 +113,39 @@
             "events": [
                 "333bf",
                 "333fm",
-                "333mbf",
                 "444bf",
-                "555bf"
+                "555bf",
+                "333mbf"
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-10-14T01:00:00.000Z",
-            "spots_left": 21
+            "spots_left": 17
+        },
+        {
+            "id": "IdahoChampionship2026",
+            "name": "Idaho Championship 2026",
+            "from": "2026-10-24",
+            "till": "2026-10-25",
+            "venue": "Courtyard by Marriott Boise West",
+            "city": "Meridian, Idaho",
+            "events": [
+                "333",
+                "222",
+                "444",
+                "555",
+                "666",
+                "777",
+                "333bf",
+                "333oh",
+                "clock",
+                "minx",
+                "pyram",
+                "skewb",
+                "sq1"
+            ],
+            "registration_opens": "2026-09-21T00:00:00.000Z",
+            "registration_closes": "2026-10-18T00:00:00.000Z",
+            "spots_left": 98
         },
         {
             "id": "UtahMarathonChampionship2026",
@@ -138,7 +164,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-07T02:00:00.000Z",
-            "spots_left": 63
+            "spots_left": 62
         },
         {
             "id": "UtahSprintChampionship2026",
@@ -148,8 +174,8 @@
             "venue": "Utah Cultural Celebration Center",
             "city": "West Valley City, Utah",
             "events": [
-                "222",
                 "333",
+                "222",
                 "333oh",
                 "clock",
                 "pyram",
@@ -157,7 +183,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-14T02:00:00.000Z",
-            "spots_left": 154
+            "spots_left": 153
         },
         {
             "id": "IdahoSpudcubingIII2026",

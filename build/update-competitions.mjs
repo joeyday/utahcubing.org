@@ -1,20 +1,28 @@
-// Regenerates assets/data/default.json and assets/data/championships.json.
+// Regenerates assets/data/default.json and assets/data/championships.json,
+// pulling everything from the official WCA API.
 //
-// Stage 1: pull the full US competition list from the unofficial WCA API
-// (https://wca-rest-api.robiningelbrecht.be) and keep only the ones organised
-// by Utah Cubing Association, plus/minus the whitelist/blacklist overrides,
-// plus a handful of "landmark" competitions (Rocky Mountain Championship, US
-// Nationals, North American Championship, World Championship) that Utah
-// cubers care about regardless of who organises them. That's default.json.
+// Stage 1: fetch every competition worldwide from PAST_CUTOFF_DAYS ago
+// onward (no upper bound - competitions aren't announced far enough in
+// advance for that to matter). The official API has no server-side filter
+// for organiser name or championship designation, so whatever we want by
+// name or by organiser has to be pulled down and filtered here in memory.
+// One worldwide pass covers everything both output files need, since a
+// Utah-scoped query would just be a subset of it.
 //
-// Stage 2: pull the WCA's own list of championship-designated competitions
-// (world + continental championships) and combine it with any US competition
-// whose name reads as a CubingUSA regional championship, the same query the
-// old site used (name matches /championship/i and /wca/i or /cubingusa/i).
-// That's championships.json.
+// Stage 2: from that one list, pick out:
+//   - default.json: competitions organised by Utah Cubing Association
+//     (plus whitelist/blacklist overrides), plus a handful of "landmark"
+//     competitions (Rocky Mountain Championship, US Nationals, North
+//     American Championship, World Championship) that Utah cubers care
+//     about regardless of who organises them.
+//   - championships.json: world + continental championships, plus any US
+//     competition whose name reads as a CubingUSA regional championship.
+//     This one is a personal travel-planning list, not a site feature -
+//     it's not linked anywhere in the UI, and deliberately excludes
+//     state-level championships (e.g. "Idaho Championship").
 //
-// Stage 3: for each competition landing in either file, hit the official WCA
-// API to get registration dates and a live "spots left" count.
+// Stage 3: for each competition landing in either file, hit the official
+// WCA API again to get registration dates and a live "spots left" count.
 //
 // Run via: node build/update-competitions.mjs
 
@@ -25,19 +33,11 @@ import path from 'node:path'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
 
-const US_COMPETITIONS_URL = 'https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/refs/heads/v1/competitions/US.json'
-const CHAMPIONSHIPS_URL = 'https://raw.githubusercontent.com/robiningelbrecht/wca-rest-api/refs/heads/v1/championships.json'
 const OFFICIAL_API_BASE = 'https://www.worldcubeassociation.org/api/v0'
 const ORGANISER_NAME = 'Utah Cubing Association'
 const TIMEZONE = 'America/Denver'
 const PAST_CUTOFF_DAYS = 60
-
-// The WCA's own "championship" regions: the world championship plus one per
-// continent. Anything tagged with one of these is a WCA major, wherever it's
-// actually held.
-const MAJOR_CHAMPIONSHIP_REGIONS = new Set([
-    'world', 'africa', 'asia', 'europe', 'north-america', 'oceania', 'south-america',
-])
+const PER_PAGE = 500
 
 // Landmark competitions Utah cubers care about even when Utah Cubing
 // Association isn't the organiser. Matched by name, not id, since ids (and
@@ -45,7 +45,18 @@ const MAJOR_CHAMPIONSHIP_REGIONS = new Set([
 const LANDMARK_NAME_PATTERNS = [
     /^(?:CubingUSA )?Rocky Mountain Championship \d{4}$/i,
     /^(?:CubingUSA Nationals|US Nationals|United States National Championships?) \d{4}$/i,
+    /\bWCA World Championship \d{4}$/i,
+    /\bWCA North American Championship \d{4}$/i,
 ]
+
+// World + continental championships, wherever they're held and whoever
+// sponsors them (sponsor names like "Rubik's" or "GAN" show up as a prefix
+// and drift year to year, so this only anchors on the "WCA ... Championship
+// YYYY" part of the name). FMC-only continental championships put "FMC"
+// before or after "Championship" depending on the year, so both orderings
+// are allowed.
+const MAJOR_CHAMPIONSHIP_NAME_PATTERN =
+    /\bWCA (World|North American|European|Asian|African|Oceanic|South American)(?: FMC)? Championship(?: FMC)? \d{4}$/i
 
 function readIdList(filename) {
     const contents = readFileSync(path.join(root, 'build', filename), 'utf8')
@@ -69,6 +80,21 @@ async function fetchJson(url) {
     const response = await fetch(url)
     if (!response.ok) throw new Error(`${response.status} ${response.statusText} fetching ${url}`)
     return response.json()
+}
+
+async function fetchAllCompetitionsSince(sinceDate) {
+    const results = []
+    let page = 1
+
+    while (true) {
+        const url = `${OFFICIAL_API_BASE}/competitions?start=${sinceDate}&per_page=${PER_PAGE}&page=${page}`
+        const batch = await fetchJson(url)
+        results.push(...batch)
+        if (batch.length < PER_PAGE) break
+        page += 1
+    }
+
+    return results
 }
 
 async function fetchRegistrationInfo(id) {
@@ -104,11 +130,11 @@ async function buildResults(competitions) {
         const entry = {
             id: competition.id,
             name: competition.name,
-            from: competition.date.from,
-            till: competition.date.till,
-            venue: stripMarkdownLinks(competition.venue.name),
+            from: competition.start_date,
+            till: competition.end_date,
+            venue: stripMarkdownLinks(competition.venue),
             city: competition.city,
-            events: competition.events,
+            events: competition.event_ids,
         }
 
         try {
@@ -140,48 +166,40 @@ async function main() {
     const whitelist = readIdList('whitelist.yml')
     const blacklist = readIdList('blacklist.yml')
 
-    const [{ items: usCompetitions }, { items: championshipCompetitions }] = await Promise.all([
-        fetchJson(US_COMPETITIONS_URL),
-        fetchJson(CHAMPIONSHIPS_URL),
-    ])
-
-    const today = toDenverDate(new Date())
     const cutoff = toDenverDate(new Date(Date.now() - PAST_CUTOFF_DAYS * 24 * 60 * 60 * 1000))
 
-    const isCurrent = competition =>
-        !competition.isCanceled && !blacklist.includes(competition.id) && competition.date.till >= cutoff
+    const allCompetitions = await fetchAllCompetitionsSince(cutoff)
 
-    const utahCompetitions = usCompetitions.filter(competition =>
+    const isCurrent = competition =>
+        !competition.cancelled_at && !blacklist.includes(competition.id) && competition.end_date >= cutoff
+
+    const utahCompetitions = allCompetitions.filter(competition =>
         isCurrent(competition) &&
         (whitelist.includes(competition.id) ||
-            competition.organisers.some(organiser => organiser.name === ORGANISER_NAME))
+            competition.organizers.some(organiser => organiser.name === ORGANISER_NAME))
     )
 
-    const landmarkCompetitions = usCompetitions.filter(competition =>
+    const landmarkCompetitions = allCompetitions.filter(competition =>
         isCurrent(competition) &&
         LANDMARK_NAME_PATTERNS.some(pattern => pattern.test(competition.name))
-    )
-
-    const majorChampionships = championshipCompetitions.filter(competition =>
-        isCurrent(competition) && MAJOR_CHAMPIONSHIP_REGIONS.has(competition.region)
-    )
-
-    const worldAndNorthAmericanChampionships = majorChampionships.filter(competition =>
-        competition.region === 'world' || competition.region === 'north-america'
     )
 
     const defaultResults = await buildResults(dedupeById([
         utahCompetitions,
         landmarkCompetitions,
-        worldAndNorthAmericanChampionships,
     ]))
     writeCompetitionData('default.json', defaultResults)
-    console.log(`Wrote ${defaultResults.length} competitions to default.json (today: ${today})`)
+    console.log(`Wrote ${defaultResults.length} competitions to default.json (cutoff: ${cutoff})`)
 
-    // Same query the old site used: name reads as a championship, and either
-    // "WCA" or "CubingUSA" is in the name.
-    const cubingUsaRegionals = usCompetitions.filter(competition =>
+    const majorChampionships = allCompetitions.filter(competition =>
+        isCurrent(competition) && MAJOR_CHAMPIONSHIP_NAME_PATTERN.test(competition.name)
+    )
+
+    // Same query the old site used: US, name reads as a championship, and
+    // "CubingUSA" is in the name.
+    const cubingUsaRegionals = allCompetitions.filter(competition =>
         isCurrent(competition) &&
+        competition.country_iso2 === 'US' &&
         /championship/i.test(competition.name) &&
         /cubingusa/i.test(competition.name)
     )
@@ -191,7 +209,7 @@ async function main() {
         cubingUsaRegionals,
     ]))
     writeCompetitionData('championships.json', championshipsResults)
-    console.log(`Wrote ${championshipsResults.length} competitions to championships.json (today: ${today})`)
+    console.log(`Wrote ${championshipsResults.length} competitions to championships.json (cutoff: ${cutoff})`)
 }
 
 main().catch(error => {
