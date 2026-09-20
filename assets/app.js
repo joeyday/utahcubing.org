@@ -103,7 +103,7 @@ function populateTable(competitions, tableId, includeRegistrationMessage) {
     let tableBody = document.getElementById(tableId)
 
     competitions.forEach(competition => {
-        let date = formatDate(competition.from.trim())
+        let date = formatDateRange(competition.from.trim(), competition.till.trim())
         let id = competition.id.trim()
         let name = competition.name.trim()
         let link = `<a href="https://www.worldcubeassociation.org/competitions/${id}">${name}</a>`
@@ -203,6 +203,9 @@ function getDaysAgo(dateString, daysAgo) {
     return `${formattedYear}-${formattedMonth}-${formattedDay}`
 }
 
+const monthAbbreviations = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
 function formatDate(dateString) {
     try {
         // Split the input date string into year, month, and day components
@@ -210,21 +213,34 @@ function formatDate(dateString) {
         var year = parseInt(dateParts[0], 10)
         var month = parseInt(dateParts[1], 10) - 1 // Months are 0-based in JavaScript
         var day = parseInt(dateParts[2], 10)
-        
+
         // Create a new Date object with the specified year, month, and day
         var date = new Date(year, month, day)
-        
-        // Array of month abbreviations
-        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        
+
         // Format the date components
-        var formattedMonth = monthNames[date.getMonth()]
+        var formattedMonth = monthAbbreviations[date.getMonth()]
         var formattedDay = date.getDate()
         var formattedYear = date.getFullYear()
-        
+
         // Combine the components into the desired format
         return `${formattedMonth} ${formattedDay}` // + `, ${formattedYear}`
+    } catch (e) {
+        return null
+    }
+}
+
+function formatDateRange(fromString, tillString) {
+    if (fromString === tillString) return formatDate(fromString)
+
+    try {
+        var [fromYear, fromMonth, fromDay] = fromString.split('-').map(part => parseInt(part, 10))
+        var [tillYear, tillMonth, tillDay] = tillString.split('-').map(part => parseInt(part, 10))
+
+        if (fromYear === tillYear && fromMonth === tillMonth) {
+            return `${monthAbbreviations[fromMonth - 1]} ${fromDay}-${tillDay}`
+        }
+
+        return `${formatDate(fromString)} - ${formatDate(tillString)}`
     } catch (e) {
         return null
     }
