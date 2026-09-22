@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-22T20:22:01.049Z",
+    "generated_at": "2026-09-22T23:08:54.024Z",
     "items": [
         {
             "id": "WildWestWyoming2026",
@@ -101,7 +101,7 @@
             ],
             "registration_opens": "2026-08-28T00:00:00.000Z",
             "registration_closes": "2026-09-25T00:00:00.000Z",
-            "spots_left": 81
+            "spots_left": 80
         },
         {
             "id": "UtahQuietChampionship2026",
@@ -183,7 +183,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-14T02:00:00.000Z",
-            "spots_left": 147
+            "spots_left": 146
         },
         {
             "id": "IdahoSpudcubingIII2026",
