@@ -1,26 +1,6 @@
 {
-    "generated_at": "2026-09-24T03:17:56.693Z",
+    "generated_at": "2026-09-24T08:39:54.983Z",
     "items": [
-        {
-            "id": "WildWestWyoming2026",
-            "name": "Wild West Wyoming 2026",
-            "from": "2026-07-25",
-            "till": "2026-07-25",
-            "venue": "The Roundhouse",
-            "city": "Evanston, Wyoming",
-            "events": [
-                "333",
-                "222",
-                "444",
-                "555",
-                "666",
-                "777",
-                "333oh"
-            ],
-            "registration_opens": "2026-05-08T01:00:00.000Z",
-            "registration_closes": "2026-07-18T01:00:00.000Z",
-            "spots_left": 60
-        },
         {
             "id": "PBQtah102026",
             "name": "PBQtah 10 2026",
