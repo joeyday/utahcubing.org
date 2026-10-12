@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-12T02:34:38.443Z",
+    "generated_at": "2026-10-12T10:16:12.844Z",
     "items": [
         {
             "id": "PBQtah102026",
@@ -99,7 +99,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-10-14T01:00:00.000Z",
-            "spots_left": 12
+            "spots_left": 11
         },
         {
             "id": "IdahoChampionship2026",
@@ -125,7 +125,7 @@
             ],
             "registration_opens": "2026-09-21T00:00:00.000Z",
             "registration_closes": "2026-10-18T00:00:00.000Z",
-            "spots_left": 65
+            "spots_left": 64
         },
         {
             "id": "UtahMarathonChampionship2026",
@@ -144,7 +144,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-07T02:00:00.000Z",
-            "spots_left": 51
+            "spots_left": 52
         },
         {
             "id": "UtahSprintChampionship2026",
