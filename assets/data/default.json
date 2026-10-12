@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-11T23:03:28.893Z",
+    "generated_at": "2026-10-12T02:34:38.443Z",
     "items": [
         {
             "id": "PBQtah102026",
@@ -125,7 +125,7 @@
             ],
             "registration_opens": "2026-09-21T00:00:00.000Z",
             "registration_closes": "2026-10-18T00:00:00.000Z",
-            "spots_left": 67
+            "spots_left": 65
         },
         {
             "id": "UtahMarathonChampionship2026",
@@ -218,7 +218,7 @@
             ],
             "registration_opens": "2026-10-13T01:00:00.000Z",
             "registration_closes": "2026-12-29T02:00:00.000Z",
-            "spots_left": 78
+            "spots_left": 77
         },
         {
             "id": "UtahIceCubing2027",
