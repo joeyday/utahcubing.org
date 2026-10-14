@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-14T00:52:53.113Z",
+    "generated_at": "2026-10-14T05:50:57.784Z",
     "items": [
         {
             "id": "PBQtah102026",
@@ -125,7 +125,7 @@
             ],
             "registration_opens": "2026-09-21T00:00:00.000Z",
             "registration_closes": "2026-10-18T00:00:00.000Z",
-            "spots_left": 62
+            "spots_left": 61
         },
         {
             "id": "UtahMarathonChampionship2026",
@@ -144,7 +144,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-07T02:00:00.000Z",
-            "spots_left": 51
+            "spots_left": 50
         },
         {
             "id": "UtahSprintChampionship2026",
@@ -163,7 +163,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-14T02:00:00.000Z",
-            "spots_left": 112
+            "spots_left": 109
         },
         {
             "id": "UtahSnowballBash2026",
@@ -181,7 +181,7 @@
             ],
             "registration_opens": "2026-10-09T01:00:00.000Z",
             "registration_closes": "2026-11-28T02:00:00.000Z",
-            "spots_left": 68
+            "spots_left": 67
         },
         {
             "id": "IdahoSpudcubingIII2026",
