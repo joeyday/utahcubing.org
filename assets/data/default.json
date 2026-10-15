@@ -1,23 +1,6 @@
 {
-    "generated_at": "2026-10-15T01:39:57.378Z",
+    "generated_at": "2026-10-15T06:59:39.515Z",
     "items": [
-        {
-            "id": "PBQtah102026",
-            "name": "PBQtah 10 2026",
-            "from": "2026-08-15",
-            "till": "2026-08-15",
-            "venue": "MX Office",
-            "city": "Lehi, Utah",
-            "events": [
-                "333bf",
-                "444bf",
-                "555bf",
-                "333mbf"
-            ],
-            "registration_opens": "2026-07-14T01:00:00.000Z",
-            "registration_closes": "2026-08-10T01:00:00.000Z",
-            "spots_left": 17
-        },
         {
             "id": "RockyMountainChampionship2026",
             "name": "Rocky Mountain Championship 2026",
