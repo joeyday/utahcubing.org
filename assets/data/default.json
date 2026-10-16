@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-16T17:36:50.970Z",
+    "generated_at": "2026-10-16T20:33:02.025Z",
     "items": [
         {
             "id": "RockyMountainChampionship2026",
@@ -108,7 +108,7 @@
             ],
             "registration_opens": "2026-09-21T00:00:00.000Z",
             "registration_closes": "2026-10-18T00:00:00.000Z",
-            "spots_left": 60
+            "spots_left": 59
         },
         {
             "id": "UtahMarathonChampionship2026",
