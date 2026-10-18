@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-18T12:43:08.444Z",
+    "generated_at": "2026-10-18T16:22:01.823Z",
     "items": [
         {
             "id": "WCAAfricanFMCChampionship2026",
@@ -96,7 +96,38 @@
             ],
             "registration_opens": "2026-06-10T05:00:00.000Z",
             "registration_closes": "2026-11-29T10:59:00.000Z",
-            "spots_left": 32
+            "spots_left": 31
+        },
+        {
+            "id": "WC2027",
+            "name": "MoYu WCA World Championship 2027",
+            "from": "2027-07-22",
+            "till": "2027-07-25",
+            "venue": "IFU Arena",
+            "city": "Uppsala",
+            "events": [
+                "333",
+                "222",
+                "444",
+                "555",
+                "666",
+                "777",
+                "333bf",
+                "333fm",
+                "333oh",
+                "clock",
+                "minx",
+                "pyram",
+                "skewb",
+                "sq1",
+                "444bf",
+                "555bf",
+                "333mbf",
+                "fto"
+            ],
+            "registration_opens": "2026-11-22T14:00:00.000Z",
+            "registration_closes": "2026-12-02T14:00:00.000Z",
+            "spots_left": 2000
         }
     ]
 }
