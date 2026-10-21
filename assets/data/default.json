@@ -1,35 +1,6 @@
 {
-    "generated_at": "2026-10-21T05:44:26.332Z",
+    "generated_at": "2026-10-21T11:13:45.620Z",
     "items": [
-        {
-            "id": "RockyMountainChampionship2026",
-            "name": "Rocky Mountain Championship 2026",
-            "from": "2026-08-21",
-            "till": "2026-08-23",
-            "venue": "Colorado Convention Center",
-            "city": "Denver, Colorado",
-            "events": [
-                "333",
-                "222",
-                "444",
-                "555",
-                "666",
-                "777",
-                "333bf",
-                "333oh",
-                "clock",
-                "minx",
-                "pyram",
-                "skewb",
-                "sq1",
-                "444bf",
-                "555bf",
-                "333mbf"
-            ],
-            "registration_opens": "2026-02-02T00:00:00.000Z",
-            "registration_closes": "2026-08-08T00:00:00.000Z",
-            "spots_left": 33
-        },
         {
             "id": "UtahSpeedcubingSpeedoff2026",
             "name": "Utah Speedcubing Speedoff 2026",
