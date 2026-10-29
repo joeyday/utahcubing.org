@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-29T02:38:50.145Z",
+    "generated_at": "2026-10-29T09:23:49.281Z",
     "items": [
         {
             "id": "WCAAfricanFMCChampionship2026",
@@ -70,6 +70,20 @@
             "spots_left": 129
         },
         {
+            "id": "GANWCAOceanicFMC2026",
+            "name": "GAN WCA Oceanic Championship FMC 2026",
+            "from": "2026-11-29",
+            "till": "2026-11-29",
+            "venue": "Multiple venues See Locations Tab",
+            "city": "Multiple cities",
+            "events": [
+                "333fm"
+            ],
+            "registration_opens": "2026-11-01T00:00:00.000Z",
+            "registration_closes": "2026-11-26T00:00:00.000Z",
+            "spots_left": 300
+        },
+        {
             "id": "OC2026",
             "name": "GAN WCA Oceanic Championship 2026",
             "from": "2026-12-10",
@@ -96,7 +110,7 @@
             ],
             "registration_opens": "2026-06-10T05:00:00.000Z",
             "registration_closes": "2026-11-29T10:59:00.000Z",
-            "spots_left": 21
+            "spots_left": 19
         },
         {
             "id": "WC2027",
