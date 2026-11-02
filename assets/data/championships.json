@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-01T23:45:41.701Z",
+    "generated_at": "2026-11-02T04:36:19.615Z",
     "items": [
         {
             "id": "WCAAfricanFMCChampionship2026",
@@ -81,7 +81,7 @@
             ],
             "registration_opens": "2026-11-01T00:00:00.000Z",
             "registration_closes": "2026-11-26T00:00:00.000Z",
-            "spots_left": 286
+            "spots_left": 285
         },
         {
             "id": "OC2026",
@@ -110,7 +110,7 @@
             ],
             "registration_opens": "2026-06-10T05:00:00.000Z",
             "registration_closes": "2026-11-29T10:59:00.000Z",
-            "spots_left": 17
+            "spots_left": 18
         },
         {
             "id": "WC2027",
