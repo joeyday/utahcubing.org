@@ -1,20 +1,6 @@
 {
-    "generated_at": "2026-11-05T01:38:50.621Z",
+    "generated_at": "2026-11-05T08:59:29.573Z",
     "items": [
-        {
-            "id": "WCAAfricanFMCChampionship2026",
-            "name": "WCA African FMC Championship 2026",
-            "from": "2026-09-05",
-            "till": "2026-09-05",
-            "venue": "Multiple Locations",
-            "city": "Multiple Cities",
-            "events": [
-                "333fm"
-            ],
-            "registration_opens": "2026-03-02T00:00:00.000Z",
-            "registration_closes": "2026-08-26T00:00:00.000Z",
-            "spots_left": 26
-        },
         {
             "id": "WCAAfricanChampionship2026",
             "name": "GAN WCA African Championship 2026",
