@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-05T22:46:08.168Z",
+    "generated_at": "2026-11-06T03:12:00.328Z",
     "items": [
         {
             "id": "UtahSpeedcubingSpeedoff2026",
@@ -98,7 +98,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-07T02:00:00.000Z",
-            "spots_left": 31
+            "spots_left": 29
         },
         {
             "id": "UtahSprintChampionship2026",
@@ -117,7 +117,7 @@
             ],
             "registration_opens": "2026-09-19T01:00:00.000Z",
             "registration_closes": "2026-11-14T02:00:00.000Z",
-            "spots_left": 58
+            "spots_left": 57
         },
         {
             "id": "UtahSnowballBash2026",
@@ -190,7 +190,7 @@
             ],
             "registration_opens": "2026-10-17T01:00:00.000Z",
             "registration_closes": "2027-01-16T02:00:00.000Z",
-            "spots_left": 108
+            "spots_left": 107
         },
         {
             "id": "WC2027",
