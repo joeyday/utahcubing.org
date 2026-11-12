@@ -1,23 +1,6 @@
 {
-    "generated_at": "2026-11-12T02:41:52.911Z",
+    "generated_at": "2026-11-12T10:40:20.727Z",
     "items": [
-        {
-            "id": "UtahSpeedcubingSpeedoff2026",
-            "name": "Utah Speedcubing Speedoff 2026",
-            "from": "2026-09-12",
-            "till": "2026-09-12",
-            "venue": "Thanksgiving Point",
-            "city": "Lehi, Utah",
-            "events": [
-                "333",
-                "222",
-                "minx",
-                "pyram"
-            ],
-            "registration_opens": "2026-05-23T01:00:00.000Z",
-            "registration_closes": "2026-09-05T01:00:00.000Z",
-            "spots_left": 59
-        },
         {
             "id": "IdahoSpookySpeedsolving2026",
             "name": "Idaho Spooky Speedsolving 2026",
