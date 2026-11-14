@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-14T15:34:33.558Z",
+    "generated_at": "2026-11-14T20:26:13.973Z",
     "items": [
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -138,6 +138,22 @@
             "registration_opens": "2026-09-04T00:00:00.000Z",
             "registration_closes": "2026-12-04T00:00:00.000Z",
             "spots_left": 63
+        },
+        {
+            "id": "12SidesChristmasLindon2026",
+            "name": "12 Sides of Christmas Lindon 2026",
+            "from": "2026-12-23",
+            "till": "2026-12-23",
+            "venue": "Lindon Veterans Hall",
+            "city": "Lindon, Utah",
+            "events": [
+                "777",
+                "minx",
+                "sq1"
+            ],
+            "registration_opens": "2026-11-18T01:00:00.000Z",
+            "registration_closes": "2026-12-19T02:00:00.000Z",
+            "spots_left": 34
         },
         {
             "id": "FTOpenUtah2027",
