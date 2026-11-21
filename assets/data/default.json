@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-21T17:07:05.825Z",
+    "generated_at": "2026-11-21T22:16:20.759Z",
     "items": [
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -118,7 +118,7 @@
             ],
             "registration_opens": "2026-10-09T01:00:00.000Z",
             "registration_closes": "2026-11-28T02:00:00.000Z",
-            "spots_left": 38
+            "spots_left": 31
         },
         {
             "id": "IdahoSpudcubingIII2026",
@@ -171,7 +171,7 @@
             ],
             "registration_opens": "2026-10-13T01:00:00.000Z",
             "registration_closes": "2026-12-29T02:00:00.000Z",
-            "spots_left": 62
+            "spots_left": 61
         },
         {
             "id": "UtahIceCubing2027",
@@ -189,7 +189,7 @@
             ],
             "registration_opens": "2026-10-17T01:00:00.000Z",
             "registration_closes": "2027-01-16T02:00:00.000Z",
-            "spots_left": 103
+            "spots_left": 100
         },
         {
             "id": "WC2027",
