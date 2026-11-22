@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-22T10:10:59.515Z",
+    "generated_at": "2026-11-22T17:58:11.863Z",
     "items": [
         {
             "id": "WCAAfricanChampionship2026",
@@ -127,7 +127,7 @@
             ],
             "registration_opens": "2026-11-22T14:00:00.000Z",
             "registration_closes": "2026-12-02T14:00:00.000Z",
-            "spots_left": 2000
+            "spots_left": 1624
         }
     ]
 }
