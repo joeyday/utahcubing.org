@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-23T14:04:04.331Z",
+    "generated_at": "2026-11-24T01:47:16.327Z",
     "items": [
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -118,7 +118,7 @@
             ],
             "registration_opens": "2026-10-09T01:00:00.000Z",
             "registration_closes": "2026-11-28T02:00:00.000Z",
-            "spots_left": 19
+            "spots_left": 14
         },
         {
             "id": "IdahoSpudcubingIII2026",
@@ -137,7 +137,7 @@
             ],
             "registration_opens": "2026-09-04T00:00:00.000Z",
             "registration_closes": "2026-12-04T00:00:00.000Z",
-            "spots_left": 59
+            "spots_left": 58
         },
         {
             "id": "12SidesChristmasLindon2026",
@@ -171,7 +171,7 @@
             ],
             "registration_opens": "2026-10-13T01:00:00.000Z",
             "registration_closes": "2026-12-29T02:00:00.000Z",
-            "spots_left": 58
+            "spots_left": 57
         },
         {
             "id": "UtahIceCubing2027",
@@ -220,7 +220,7 @@
             ],
             "registration_opens": "2026-11-22T14:00:00.000Z",
             "registration_closes": "2026-12-02T14:00:00.000Z",
-            "spots_left": 1514
+            "spots_left": 1497
         }
     ]
 }
