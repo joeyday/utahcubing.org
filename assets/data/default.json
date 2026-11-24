@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-24T01:47:16.327Z",
+    "generated_at": "2026-11-24T12:01:25.228Z",
     "items": [
         {
             "id": "IdahoSpookySpeedsolving2026",
@@ -118,7 +118,7 @@
             ],
             "registration_opens": "2026-10-09T01:00:00.000Z",
             "registration_closes": "2026-11-28T02:00:00.000Z",
-            "spots_left": 14
+            "spots_left": 12
         },
         {
             "id": "IdahoSpudcubingIII2026",
@@ -220,7 +220,7 @@
             ],
             "registration_opens": "2026-11-22T14:00:00.000Z",
             "registration_closes": "2026-12-02T14:00:00.000Z",
-            "spots_left": 1497
+            "spots_left": 1489
         }
     ]
 }
