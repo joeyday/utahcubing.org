@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-24T22:40:14.698Z",
+    "generated_at": "2026-11-25T05:13:57.501Z",
     "items": [
         {
             "id": "NewEnglandChampionship2026",
@@ -98,7 +98,7 @@
             ],
             "registration_opens": "2026-11-22T14:00:00.000Z",
             "registration_closes": "2026-12-02T14:00:00.000Z",
-            "spots_left": 1480
+            "spots_left": 1477
         }
     ]
 }
